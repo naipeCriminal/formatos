@@ -9,9 +9,194 @@
     <link rel="icon" href="../../favicon.ico">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <style>h1{color:"blue";} .panel.body{border-radius: 0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border:1px solid #BFDDEF;padding-left: 5px;padding-right: 5px;padding-top: 3px;padding-bottom: 3px;}.azulclaro{color:#BFDDEF;}.azulrey{color:#094FA4;}</style>
+    <style>
+      h1{color:"blue";
+      }
+      .facturaParc{
+      	padding-left: 40px;
+      	padding-right: 40px;
+      	color: #009ee5;
+      	font-size: 13px;
+      }
+      h1{color:"blue";}
+      /*   Estilos header   		++++++++++++*/
+      .cabecera{
+      	background: #fff;
+      }
+      .head img{
+      	height: 17%;
+      	width: 100%;
+      }
+      .serie{
+      	left: 25px;
+      }
+      .head ul{
+      	margin-top: 10px;
+      	margin-bottom: 10px;
+      }
+      .head li{
+      	display: block;
+      	margin-bottom: 5px;
+      	font-weight: bold;
+      }
+      .grupnls{
+      	margin-top: 6px;
+      }
+      .head .panel{
+      	border-radius: 0px;
+      	border-bottom: 1px solid #009ee5;
+      	margin-bottom: 0px;
+      	border-radius: 0px;
+      	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      }
+      .head .panel-body{
+      	padding: 2px;
+      }
+      .head .panel-body p{
+      	margin: 0px 0 -1px;
+      }
+      .space{
+      	height: 40px;
+      }
+      /* Termina estilos header     	++++++++++++*/
+      /* Estilos Factura            	++++++++++++*/
+      .factura{
+      background: #eee;
+      }
+      .factura h5{
+      	color: #3f51b5;
+      	font-size: 30px;
+      }
+      .emisorFac{
+      	left: -20px;
+      }
+      .factura ul{
+      	margin-top: 4px;
+      	margin-bottom: 10px;
+      }
+      .factura li{
+      	display: block;
+      	margin-bottom: 11px;
+      }
+      .pnlsfactura{
+      	left: -14px;
+      	margin-top: 0px;
+      }
+      .factura .panel{
+      	border-radius: 0px;
+      	border: 1px solid #BFDDEF;
+      	margin-bottom: 0px;
+      	border-radius: 0px;
+      	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      }
+      .factura .panel1{
+      	border-radius: 0px;
+      	border-left: 1px solid #BFDDEF;
+      	border-right: 1px solid #BFDDEF;
+      	border-bottom: 1px solid #BFDDEF;
+      	background-color: #fff;
+      	margin-bottom: 0px;
+      	border-radius: 0px;
+      	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      }
+      .factura .panel2{
+      	border-radius: 0px;
+      	border-left: 1px solid #BFDDEF;
+      	border-right: 1px solid #BFDDEF;
+      	border-bottom: 1px solid #BFDDEF;
+      	background-color: #fff;
+      	margin-bottom: 0px;
+      	border-radius: 0px;
+      	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      }
+      .factura .panel-body{
+      	padding: 5px;
+      }
+      .factura .panel-body p{
+      	margin: 0px 0 -1px;
+      	font-weight: bold;
+      }
+      /* Termina estilos header   	++++++++++++*/
+      h1{color:"blue";} .panel.body{border-radius: 0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border:1px solid #BFDDEF;padding-left: 5px;padding-right: 5px;padding-top: 3px;padding-bottom: 3px;}.azulclaro{color:#BFDDEF;}.azulrey{color:#094FA4;}
+    </style>
   </head>
   <body>
+    <div id="contenido">
+      <div class="container">
+        <div class="row">
+          <p class="azulrey">PAGO EN 12 PARCIALIDADES/PAGO EN UNA SOLA EXHIBICIÓN</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <p>Descripción</p>
+            <div class="panel body"> <strong>SEGURO DE DAÑOS</strong></div>
+          </div>
+          <div class="col-md-2">
+            <p>Identificación(Póliza)</p>
+            <div class="panel body"><strong>AA6ACMO28R</strong></div>
+          </div>
+          <div class="col-md-2">
+            <p>Identificación(Inciso)</p>
+            <div class="panel body"><strong>0</strong></div>
+          </div>
+          <div class="col-md-4">
+            <p>Identificación (Vigencia)</p>
+            <div class="panel body"><strong>6</strong></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4"> 
+            <p>Periodo de Recibo (Día/Mes/ Año)</p>
+            <div class="panel body"><strong>06/03/2017 al 06/09/2017</strong></div>
+          </div>
+          <div class="col-md-4">
+            <p>Moneda:</p>
+            <div class="panel body"><strong>pesos</strong></div>
+          </div>
+          <div class="col-md-4">
+            <p>R.F.C. Contratante:</p>
+            <div class="panel body"><strong>PEPE4811128K2</strong></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p>Nombre del contratante</p>
+            <div class="panel body"><strong>ERNESTINA PEREZ PERALTA</strong></div>
+          </div>
+          <div class="col-md-12">
+            <p>Domicilio Fiscal</p>
+            <div class="panel body"><strong>CALZADA CONSTITUCIÓN Y BENJAMIN HILL 422, COL, LA MESA, SAN LUIS RÍO COLORADO, SONORA, MÉXICO, C.P. 834220</strong></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="col-md-4">
+              <p>texto</p>
+              <div class="panel body">
+                <texto>panel</texto>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p>texto</p>
+              <div class="panel body">
+                <texto>panel</texto>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p>texto</p>
+              <div class="panel body">
+                <texto>panel</texto>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </div>
     <div id="footer">
       <div class="container">
         <div class="row">
@@ -40,7 +225,5 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
