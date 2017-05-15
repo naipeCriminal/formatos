@@ -1,10 +1,50 @@
-
-<html>
-  <style>h1{color:"blue";}</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+      h1{color:"blue";
+      }
+      .facturaParc{
+      	padding-left: 40px;
+      	padding-right: 40px;
+      	color: #009ee5;
+      	font-size: 13px;
+      }
+    </style>
+  </head>
   <body>
-    <h1>header</h1>
-    +panel
-    	p hola perras
-    <h1>footer</h1>
+    <div class="row facturaParc">
+      <div class="col-md-12">
+        <label>Recibo por el importe de la prima descrita, la cual cubre los días que se indican contados a aprtir de la fecha vencimiento.</label>
+      </div>
+      <div class="col-md-12 col-xs-2">
+        <label>PAGO EN UNA SOLA EXCIBICIÓN
+          <ul>
+            <li>Anual 
+              <input>
+            </li><br>
+            <li>Semestral
+              <input>
+            </li><br>
+            <li>Trimestral
+              <input>
+            </li><br>
+            <li>Mensual
+              <input>
+            </li><br>
+          </ul>
+        </label>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </body>
 </html>
