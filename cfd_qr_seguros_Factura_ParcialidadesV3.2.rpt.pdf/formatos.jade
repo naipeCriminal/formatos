@@ -13,25 +13,38 @@ html(lang="en")
 
 	body
 		
-	block header
-		.row.facturaParc
-			.col-md-12
-				label Recibo por el importe de la prima descrita, la cual cubre los días que se indican contados a aprtir de la fecha vencimiento.
-			.col-md-12.col-xs-2
-				ul
-					li PAGO EN UNA SOLA EXCIBICIÓN
-					li Anual 
-						input
-					br
-					li Semestral
-						input
-					br
-					li Trimestral
-						input
-					br
-					li Mensual
-						input
-					br
+		block header
+
+		.container
+			.row.facturaParc
+				.col-md-12
+					label Recibo por el importe de la prima descrita, la cual cubre los días que se indican contados a aprtir de la fecha vencimiento.
+				.col-md-12
+					.col-md-4
+						label PAGO EN UNA SOLA EXCIBICIÓN
+					.col-md-2
+						label Anual
+							.panel
+								.panel-default
+									.panel-body
+						br
+					.col-md-2
+						label Semestral
+							.panel
+								.panel-default
+									.panel-body
+						br
+					.col-md-2		
+						label Trimestral
+							.panel
+								.panel-default
+									.panel-body
+						br
+					.col-md-2
+						label Mensual
+							.panel
+								.panel-default
+									.panel-body
 		#footer
 			.container
 				.row
