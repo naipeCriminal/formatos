@@ -7,38 +7,49 @@ block header
 					.col-md-12.head
 						.col-md-4
 							img(src="assets/img/bbva-bancomer.jpg", alt="")
-						.col-md-4.text-right.serie
-							ul
-								li Serie:
-								li Folio:
-								li No. De certificado:
-								li Folio fiscal (uuid):
-								li Fecha y hora de timbrado:
-								li No. De serie del Certificado sat:
-								li Lugar de expedición:
+						//- .col-md-4.text-right.serie
+						//- 	ul
+						//- 		li Serie:
+						//- 		li Folio:
+						//- 		li No. De certificado:
+						//- 		li Folio fiscal (uuid):
+						//- 		li Fecha y hora de timbrado:
+						//- 		li No. De serie del Certificado sat:
+						//- 		li Lugar de expedición:
 
-						.col-md-4.text-left.grupnls
-							.panel.panel-undefined
-								.panel-body
-									p FF
+						.col-md-8.text-right.grupnls
+							.col-md-5
+								p Serie:
+							.col-md-7
+								.panel.panel-undefined
+									.panel-body
+										strong FF
+						.col-md-8.text-right.grupnls
+							.col-md-5
+								p Folio:
+							.col-md-7
+								.panel.panel-undifined
+									.panel-body
+										strong XXX
+						.col-md-8.text-right.grupnls
+							.col-md-3
+								p No. De certificado:
+							.col-md-9
+								.panel.panel-undifined
+									.panel-body
+										strong 000001000000202284364
 							.panel.panel-undifined
 								.panel-body
-									p 28872300a
+									strong XXX
 							.panel.panel-undifined
 								.panel-body
-									p 100000040404099
+									strong 2012-09-20T13:34:34
 							.panel.panel-undifined
 								.panel-body
-									p 029110cf-04fb-41ed-a798-035f062de987
+									strong 200010000005761
 							.panel.panel-undifined
 								.panel-body
-									p 2017-01-29t11:49:48
-							.panel.panel-undifined
-								.panel-body
-									p 100000056345290
-							.panel.panel-undifined
-								.panel-body
-									p Ciudad de México C.P. 11000
+									strong XXX
 		.factura
 			.container
 				.row
@@ -53,19 +64,136 @@ block header
 					.col-md-10.pnlsfactura
 						.panel.panel-undifined
 								.panel-body
-									p Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.
+									strong 
 						.panel1.panel-undifined
 								.panel-body
-									p xxxx
+									strong 
 						.panel1.panel-undifined
 								.panel-body
-									p SSBB961118TIA
+									strong 
 						.panel2.panel-undifined
 								.panel-body
-									P 601 GENERAL DE LEY DE PERSONAS MORALES
+									strong 
 				.space		
 
+block content
+		#contenido
+			.container
+				.row
+					.col-md-12
+						p.azulrey PAGO EN UNA SOLA EXHIBICIÓN
+				.row
+					.col-md-4
+						p Descripción
+						.panel.body 
+							strong SEGURO DE VIDA
+					.col-md-2
+						p Identificación(Póliza)
+						.panel.body
+							strong 3A2B05006Q
+					.col-md-2
+						p Identificación(Inciso)
+						.panel.body
+							strong 0
+					.col-md-4
+						p Identificación (Vigencia)
+						.panel.body
+							strong 0
+				.row
+					.col-md-4 
+						p Periodo de Recibo (Día/Mes/ Año)
+						.panel.body
+							strong XXX
+					.col-md-4
+						p Moneda:
+						.panel.body
+							strong XXX
 
+					.col-md-4
+						p Folio Fiscal Original:
+						.panel.body
+							strong XXX
+				.row
+					.col-md-4 
+						p Serie Folio Fiscal Original
+						.panel.body
+							strong XXX
+					.col-md-4
+						p Fecha Folio Fiscal Original
+						.panel.body
+							strong XXX
+
+					.col-md-4
+						p  Monto Folio Fiscal Original:
+						.panel.body
+							strong XXX
+				.row
+					.col-md-8
+						p Nombre del contratante
+						.panel.body
+							strong INMOBILIARIA HOTELERA QUERETARO S.A. DE C.V.
+					.col-md-4
+						p R.F.C. del Contratante
+						.panel.body
+							strong IHQ020717KU3
+				.row
+					.col-md-12
+						p Domicilio Fiscal
+						.panel.body
+							strong PASEO DE LAS PALMAS NO.735 5TO PISO, COL, GUILLERMINA, DURANGO, DURANGO, MÉXICO, C.P.34270
+					.col-md-6.sp
+						.col-md-4
+							p texto
+							.panel.body
+								texto panel
+						.col-md-4
+							p texto
+							.panel.body
+								texto panel
+						.col-md-4
+							p texto
+							.panel.body
+								texto panel
+						.col-md-4
+							p texto
+							.panel.body
+								texto panel	
+						.col-md-8
+							p texto
+							.panel.body
+								texto panel	
+						.col-md-12
+							p texto
+							.panel.body
+								texto panel
+					.col-md-6.sp
+						.col-md-12
+							p.text-right Valor de Factura					
+						.col-md-3
+							p.text-right texto
+						.col-md-9     
+							.panel.body
+								strong texto
+						.col-md-3
+							p.text-right texto
+						.col-md-9
+							.panel.body
+								strong texto
+						.col-md-3
+							p.text-right texto
+						.col-md-9
+							.panel.body
+								strong texto
+						.col-md-3
+							p.text-right texto
+						.col-md-9
+							.panel.body
+								strong texto
+						.col-md-3
+							p.text-right texto
+						.col-md-9
+							.panel.body
+								strong texto
 
 block footer
 	#footer
@@ -76,15 +204,15 @@ block footer
 					.col-md-12
 						p Importe con Letra							
 						.panel.body 
-							strong *** (CUATROCIENTOS SEIS PESOS 07/100 M.N. )***
+							strong *** (UN PESO 02/100 M.N. )***
 					.col-md-6
 						p Lugar, Fecha y Hora de Emisión
 						.panel.body 
-							strong 2017-03-10T12:2356		
+							strong 2012-12-20T17:31:41		
 					.col-md-6
 						p Fecha de Generación
 						.panel.body 
-							strong 08 de March de 2017
+							strong 26 de October de 2012
 					p.azulclaro Este documento es una representación impresa de un CFDI
 					p RFC del Proveedor de Certificación: BBA830831LJ2
 			.row.sellos
