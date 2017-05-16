@@ -85,31 +85,32 @@ block facturaTitulo
 				h1.text-center FACTURA
 block pago
 		.container
-			.row.facturaParc
+			.row
 				.col-md-12
 					P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA DE VENCIMIENTO.
-				.col-md-12.paddingPago
-					.col-md-4
-						label PAGO EN UNA SOLA EXCIBICIÓN
-					.col-md-1
-						label Anual
-					.col-md-1.ajustePanel.panel.body
-					.col-md-1
-						label Semestral
-					.col-md-1.ajustePanel.panel.body
-					.col-md-1
-						label Trimestral
-					.col-md-1.ajustePanel.panel.body
-					.col-md-1
-						label Mensual
-					.col-md-1.ajustePanel.panel.body
+				.space
+				.col-md-4
+					label.facturaParc PAGO EN UNA SOLA EXCIBICIÓN
+				.col-md-1
+					label.facturaParc Anual
+				.col-md-1.ajustePanel.panel.body
+					strong X
+				.col-md-1
+					label.facturaParc Semestral
+				.col-md-1.ajustePanel.panel.body
+					strong
+				.col-md-1
+					label.facturaParc Trimestral
+				.col-md-1.ajustePanel.panel.body
+					strong
+				.col-md-1
+					label.facturaParc Mensual
+				.col-md-1.ajustePanel.panel.body
+					strong
 
 block content
 		#contenido
 			.container
-				.row
-					.col-md-12
-						p.azulrey PAGO EN UNA SOLA EXHIBICIÓN
 				.row
 					.col-md-4
 						p Seguro de
