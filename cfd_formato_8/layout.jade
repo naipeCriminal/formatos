@@ -83,16 +83,33 @@ block facturaTitulo
 		.row
 			.col-md-12
 				h1.text-center FACTURA
-
+block pago
+		.container
+			.row
+				.col-md-12
+					P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
+				.space
+				.col-md-4
+					label.facturaParc PAGO EN UNA SOLA EXCIBICIÓN
+				.col-md-1
+					label.facturaParc Anual
+				.col-md-1.ajustePanel.panel.body
+					strong X
+				.col-md-1
+					label.facturaParc Semestral
+				.col-md-1.ajustePanel.panel.body
+					strong
+				.col-md-1
+					label.facturaParc Trimestral
+				.col-md-1.ajustePanel.panel.body
+					strong
+				.col-md-1
+					label.facturaParc Mensual
+				.col-md-1.ajustePanel.panel.body
+					strong
 block content
 		#contenido
 			.container
-				.row
-					.col-md-12
-						P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA DE VENCIMIENTO.
-				.row
-					.col-md-12
-						p.azulrey PAGO EN UNA SOLA EXHIBICIÓN
 				.row
 					.col-md-4
 						p Seguro de
@@ -112,7 +129,7 @@ block content
 							strong 0
 				.row
 					.col-md-4 
-						p Periodo de Recibo (Día/Mes/ Año)
+						p Periodo del Recibo (Día/Mes/ Año)
 						.panel.body
 							strong 26/10/2012 al 26/10/2012
 					.col-md-4
@@ -233,7 +250,6 @@ block footer
 						.panel.body 
 							strong 08 de March de 2017
 					p.azulrey ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI
-					p RFC DEL PROVEEDOR DE CERTIFICACIÓN: BBA830831LJ2
 			.row.sellos
 				.col-md-12
 					p SELLO DIGITAL DEL CFDI:
