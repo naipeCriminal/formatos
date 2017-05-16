@@ -1,0 +1,96 @@
+extends formatos
+
+block header
+		.cabecera
+			.container
+				.row
+					.col-md-12.head
+						.col-md-4
+							img(src="assets/img/bbva-bancomer.jpg", alt="")
+						.col-md-4.text-right.serie
+							ul
+								li Serie:
+								li Folio:
+								li No. De certificado:
+								li Folio fiscal (uuid):
+								li Fecha y hora de timbrado:
+								li No. De serie del Certificado sat:
+								li Lugar de expedición:
+
+						.col-md-4.text-left.grupnls
+							.panel.panel-undefined
+								.panel-body
+									p FF
+							.panel.panel-undifined
+								.panel-body
+									p 28872300a
+							.panel.panel-undifined
+								.panel-body
+									p 100000040404099
+							.panel.panel-undifined
+								.panel-body
+									p 029110cf-04fb-41ed-a798-035f062de987
+							.panel.panel-undifined
+								.panel-body
+									p 2017-01-29t11:49:48
+							.panel.panel-undifined
+								.panel-body
+									p 100000056345290
+							.panel.panel-undifined
+								.panel-body
+									p Ciudad de México C.P. 11000
+		.factura
+			.container
+				.row
+					.col-md-12.text-center
+						h5 FACTURA
+					.col-md-2.emisorFac.text-left
+						ul
+							li Nombre del Emisor
+							li Domicilio Fiscal
+							li RFC Emisor
+							li Régimen Fiscal
+					.col-md-10.pnlsfactura
+						.panel.panel-undifined
+								.panel-body
+									p Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.
+						.panel1.panel-undifined
+								.panel-body
+									p xxxx
+						.panel1.panel-undifined
+								.panel-body
+									p SSBB961118TIA
+						.panel2.panel-undifined
+								.panel-body
+									P 601 GENERAL DE LEY DE PERSONAS MORALES
+				.space		
+
+
+
+block footer
+	#footer
+		.container
+			.row
+				.col-md-3
+				.col-md-9
+					.col-md-12
+						p Importe con Letra							
+						.panel.body 
+							strong *** (CUATROCIENTOS SEIS PESOS 07/100 M.N. )***
+					.col-md-6
+						p Lugar, Fecha y Hora de Emisión
+						.panel.body 
+							strong 2017-03-10T12:2356		
+					.col-md-6
+						p Fecha de Generación
+						.panel.body 
+							strong 08 de March de 2017
+					p.azulclaro Este documento es una representación impresa de un CFDI
+					p RFC del Proveedor de Certificación: BBA830831LJ2
+			.row.sellos
+				p SELLO DIGITAL DEL CFDI:
+				span VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
+				p
+				span JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
+				p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
+				span ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
