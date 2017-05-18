@@ -45,9 +45,8 @@ block header
 						P dato
 						.space
 		.space
-block leyenda
-	#contenido.wibe
-		.container
+block facturaTitulo
+		.container.titulo.wibe
 			.row
 				.col-md-12
 					p.text-center
@@ -59,7 +58,7 @@ block content
 		.container
 			.row
 				.col-md-12
-					p.azulrey PAGO EN UNA SOLA EXHIBICIÒN
+					label.azulrey PAGO EN UNA SOLA EXHIBICIÒN
 			.row
 				.col-md-5
 					p SEGURO DE
@@ -112,7 +111,9 @@ block content
 				.col-md-12
 					p domicilo fiscal
 					.panel.body
-						strong BENITO JUAREZ No. 26, COL PANOCHAYA, AMECAMECA, ESTADO DE MÈXICO, MÈXICO.
+						strong BENITO JUAREZ No. 26, COL PANOCHAYA, AMECAMECA, ESTADO DE MÈXICO, MÈXICO. C.P. 55900
+							br
+						br
 				.col-md-6.sp
 					.col-md-12.sp
 						.col-md-6
@@ -141,97 +142,37 @@ block content
 						.col-md-12
 							p.text-right VALOR TOTAL DE LA NOTA DE CARGO
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right PRIMA NETA
 						.col-md-9
 							.panel.body
 									strong $40.50
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right DERECHO
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right RECARGOS
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right I.V.A.
-								span.panel.body 0
+								span.panel.body
+									strong 0
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right IMPORTE TOTAL
 						.col-md-9
 							.panel.body
 								strong $40.50						
-block pago
-	#contenido.wibe
-		.container
-			.row
-				
-				.col-md-4
-					label.facturaParc PAGO EN UNA 12 PARCIALIDADES
-				.col-md-1
-					label.facturaParc Anual
-				.col-md-1.ajustePanel.panel.body
-					strong X
-				.col-md-1
-					label.facturaParc Semestral
-				.col-md-1.ajustePanel.panel.body
-					strong
-				.col-md-1
-					label.facturaParc Trimestral
-				.col-md-1.ajustePanel.panel.body
-					strong
-				.col-md-1
-					label.facturaParc Mensual
-				.col-md-1.ajustePanel.panel.body
-					strong
-
-block factura
-	#contenido.wibe
-		.factura
-			.container
-				.row
-					.col-md-12.text-center
-						h5 FACTURA
-					.col-md-12
-						.col-md-2.text-right
-								p Nombre del Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong 
-					.col-md-12
-						.col-md-2.text-right
-								p Domicilio Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-					.col-md-12
-						.col-md-2.text-right
-								p RFC Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-					.col-md-12
-						.col-md-2.text-right
-								p Régimen Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-				.space
-				.space
 block footer
 	#contenido.wibe
 		#footer

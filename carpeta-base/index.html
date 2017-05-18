@@ -11,34 +11,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <style>
       .facturaParc{
-      	padding-left: 40px;
-      	padding-right: 40px;
-      	color: #009ee5;
-      	font-size: 13px;
+      	color: #094FA4;
+      	font-size: 12px;
       }
-      h1{color:"blue";}
+      .ajustePanel.panel.body{
+      	left: -8px;
+      	height: 30px;
+      	width: 30px;
+      	top: -5px;
+      }
+      .paddingPago{
+      	padding-top: 15px;
+      }
+      .head{font-size:10px;}
       /*   Estilos header   		++++++++++++*/
       .cabecera{
       	background: #fff;
       }
       .head img{
-      	height: 17%;
-      	width: 100%;
+      	height: 115px;
       }
-      .serie{
-      	left: 25px;
-      }
-      .head ul{
-      	margin-top: 10px;
-      	margin-bottom: 10px;
-      }
-      .head li{
-      	display: block;
-      	margin-bottom: 5px;
-      	font-weight: bold;
+      .head p{
+      	margin: 0px 0 3px;
       }
       .grupnls{
-      	margin-top: 6px;
+      	margin-top: 3px;
       }
       .head .panel{
       	border-radius: 0px;
@@ -51,12 +48,15 @@
       .head .panel-body{
       	padding: 2px;
       }
-      .head .panel-body p{
-      	margin: 0px 0 -1px;
+      .head .panel-body strong{
+      	margin: 0px 10px -1px;
       }
       .space{
-      	height: 40px;
+      	height: 15px;
       }
+      .titulo p strong{font-size:15px;}
+      #contenido p, #contenido strong{font-size:12px;}
+      .baja{bottom: -7px;}
       /* Termina estilos header     	++++++++++++*/
       /* Estilos Factura            	++++++++++++*/
       .factura{
@@ -68,18 +68,6 @@
       }
       .emisorFac{
       	left: -20px;
-      }
-      .factura ul{
-      	margin-top: 4px;
-      	margin-bottom: 10px;
-      }
-      .factura li{
-      	display: block;
-      	margin-bottom: 11px;
-      }
-      .pnlsfactura{
-      	left: -14px;
-      	margin-top: 0px;
       }
       .factura .panel{
       	border-radius: 0px;
@@ -112,14 +100,44 @@
       	box-shadow: 0 0px 0px rgba(0,0,0,.05);
       }
       .factura .panel-body{
-      	padding: 5px;
+      	padding: 14px;
       }
-      .factura .panel-body p{
+      .factura .panel-body strong{
       	margin: 0px 0 -1px;
-      	font-weight: bold;
+      }
+      .panel-datos{
+      	border: 1px solid #e8ffff;
+      	background: #e8ffff;
+      	width: 100%;
+      	-webkit-border-radius: 1px;
+      	-moz-border-radius: 1px;
+      	border-radius: 1px;
+      }
+      .paneltx{
+      	text-align: center;
       }
       /* Termina estilos header   	++++++++++++*/
-      h1{color:"blue";} .panel.body{border-radius: 0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;border:1px solid #BFDDEF;padding-left: 5px;padding-right: 5px;padding-top: 3px;padding-bottom: 3px;}.azulclaro{color:#BFDDEF;}.azulrey{color:#094FA4;}
+      .bloque{
+      	background: #bfddef;
+      	margin: -6px;
+      	padding: 8px;
+      }
+      .panel2{
+      	border-radius: 0px;
+      	border-bottom: 1px solid #009ee5;
+      	margin-bottom: 0px;
+      	border-radius: 0px;
+      	-webkit-box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      	box-shadow: 0 0px 0px rgba(0,0,0,.05);
+      }
+      .panel-body2{
+      	padding: 2px;
+      }
+      .panel-body2 p{
+      	margin: 0px 0 -1px;
+      }
+      .panel.body{border-radius: 0px 0px 0px 0px;-moz-border-radius: 0px 0px 0px 0px;-webkit-border-radius: 0px 0px 0px 0px;background: #FAFAFA;border:1px solid #BFDDEF;padding-left: 5px;padding-right: 5px;padding-top: 3px;padding-bottom: 3px;}.azulclaro{color:#BFDDEF;}.azulrey{color:#094FA4;font-size:12px}.sp{padding-left: 0px;padding-right: 0px;}.spt{margin-bottom: -21px;}.sellos span{font-size:10px;}.sellos p{font-size:10px;}p{text-transform:uppercase;}.container{ min-width: none !important; width: 1200px; }#footer img{height: 170px;width: 170px;}
+      .wibe .head .panel{border-bottom: 1px solid #DADADA;}.wibe .panel.body{    border: 1px solid #DADADA;background:#F9F9F9;}.wibe .azulrey{color:#08B25C;font-size:12px}
     </style>
   </head>
   <body></body>
@@ -128,96 +146,359 @@
       <div class="row">
         <div class="col-md-12 head">
           <div class="col-md-4"><img src="assets/img/bbva-bancomer.jpg" alt=""></div>
-          <div class="col-md-4 text-right serie">
-            <ul>
-              <li>Serie:</li>
-              <li>Folio:</li>
-              <li>No. De certificado:</li>
-              <li>Folio fiscal (uuid):</li>
-              <li>Fecha y hora de timbrado:</li>
-              <li>No. De serie del Certificado sat:</li>
-              <li>Lugar de expedición:</li>
-            </ul>
+          <div class="col-md-8">
+            <div class="space"></div>
+            <div class="col-md-6 text-right grupnls">
+              <p>SERIE</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undefined">
+                <div class="panel-body"><strong>FF</strong></div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right grupnls">
+              <p>NO. DE SERIE DEL CERTIFICADO</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undifined">
+                <div class="panel-body"><strong>000001000000202284364</strong></div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right grupnls">
+              <p>FOLIO FISCAL:</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undifined">
+                <div class="panel-body"><strong>XXX</strong></div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right grupnls">
+              <p>FECHA Y HOTA DE CERTIFICACIÓN:	</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undifined">
+                <div class="panel-body"><strong>2012-09-20T13:34:34</strong></div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right grupnls">
+              <p>NO. DE SERIE DEL CERTIFICADO SAT:	</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undifined">
+                <div class="panel-body"><strong>200010000005761</strong></div>
+              </div>
+            </div>
+            <div class="col-md-6 text-right grupnls">
+              <p>Lugar de expedición:	</p>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-undifined">
+                <div class="panel-body"><strong>XXX</strong></div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 text-left grupnls">
-            <div class="panel panel-undefined">
-              <div class="panel-body">
-                <p>FF</p>
-              </div>
+          <P class="azulrey">SEGUROS BBVA BANCOMER, S.A. DE C.V., GRUPO FINANCIERO BBVA BANCOMER.</P>
+          <P>DOMICILIO FISCAL:</P>
+          <div class="space"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space"></div>
+  <div class="container titulo">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center"><strong>NOTA DE CARGO</strong></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <P class="azulrey">RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.</P>
+      </div>
+    </div>
+  </div>
+  <div class="factura">
+    <div class="container">
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="col-md-12">
+        <div class="col-md-2 text-right">
+          <p>Nombre del Emisor</p>
+        </div>
+        <div class="col-md-10">
+          <div class="panel panel-undefined">
+            <div class="panel-body"><strong> </strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-2 text-right">
+          <p>Domicilio Fiscal</p>
+        </div>
+        <div class="col-md-10">
+          <div class="panel panel-undefined">
+            <div class="panel-body"><strong></strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-2 text-right">
+          <p>RFC Emisor</p>
+        </div>
+        <div class="col-md-10">
+          <div class="panel panel-undefined">
+            <div class="panel-body"><strong></strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-2 text-right">
+          <p>Régimen Fiscal</p>
+        </div>
+        <div class="col-md-10">
+          <div class="panel panel-undefined">
+            <div class="panel-body"><strong></strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+  </div>
+  <div class="container wibe">
+    <div class="row">
+      <div class="space"></div>
+      <div class="space"></div>
+      <div class="col-md-4">
+        <label class="azulrey">PAGO EN UNA 12 PARCIALIDADES</label>
+      </div>
+      <div class="col-md-1">
+        <label class="azulrey">Anual</label>
+      </div>
+      <div class="col-md-1 ajustePanel panel body"><strong>X</strong></div>
+      <div class="col-md-1">
+        <label class="azulrey">Semestral</label>
+      </div>
+      <div class="col-md-1 ajustePanel panel body"><strong></strong></div>
+      <div class="col-md-1">
+        <label class="azulrey">Trimestral</label>
+      </div>
+      <div class="col-md-1 ajustePanel panel body"><strong></strong></div>
+      <div class="col-md-1">
+        <label class="azulrey">Mensual</label>
+      </div>
+      <div class="col-md-1 ajustePanel panel body"><strong></strong></div>
+    </div>
+  </div>
+  <div id="contenido">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <p>Seguro de</p>
+          <div class="panel body"> <strong>Accidentes y Enfermedades</strong></div>
+        </div>
+        <div class="col-md-4">
+          <p>Póliza No.</p>
+          <div class="panel body"><strong>PB1218</strong></div>
+        </div>
+        <div class="col-md-3">
+          <p>Inciso</p>
+          <div class="panel body"><strong>3</strong></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <p>Moneda:</p>
+          <div class="panel body"><strong>Pesos</strong></div>
+        </div>
+        <div class="col-md-4">
+          <p>No. Cuenta de Pago:</p>
+          <div class="panel body"><strong>NO IDENTIFICADO</strong></div>
+        </div>
+        <div class="col-md-4">
+          <p>Folio Fiscal Original:</p>
+          <div class="panel body"><strong>XXX</strong></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"> 
+          <p>Serie Folio Fiscal Original</p>
+          <div class="panel body"><strong>XXX</strong></div>
+        </div>
+        <div class="col-md-4">
+          <p>Fecha Folio Fiscal Original</p>
+          <div class="panel body"><strong>XXX</strong></div>
+        </div>
+        <div class="col-md-3">
+          <p> Monto Folio Fiscal Original:</p>
+          <div class="panel body"><strong>$0.00</strong></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Nombre del contratante</p>
+          <div class="panel body"><strong>SERVS WORLD ACCEPTANCE CORPORATION DE MÉXICO, S DE RL DE CV</strong></div>
+        </div>
+        <div class="col-md-4">
+          <p>R.F.C. del Contratante</p>
+          <div class="panel body"><strong>8WA050523UZ2</strong></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Domicilio Fiscal</p>
+          <div class="panel body"><strong>AV. RAFAEL PEREZ SERNA Num.951 Int-3, COL PARQUE INDUSTRIAL OMEGA, JUAREZ, CHIHUHUA, MÉXICO, C.P.32410<br></strong><br></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <p>Cantidad</p>
+          <div class="bloque"><strong>1 <br></strong><br></div>
+        </div>
+        <div class="col-md-8">
+          <p class="text-center">Descripción</p>
+          <div class="bloque"><strong>PRIMA DE SEGUROS Accidentes y Enfermedades<br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <p>Precio</p>
+          <div class="bloque"><strong>$96.020.91<br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <p>Importe</p>
+          <div class="bloque"><strong>$96.020.91<br></strong><br></div>
+        </div>
+        <div class="col-md-2">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-8">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-2">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-8">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+        <div class="col-md-1">
+          <div class="bloque"><strong><br></strong><br></div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="row">
+        <div class="col-md-6 sp">
+          <div class="col-md-8">
+            <p>Unidad de Medida</p>
+            <div class="panel body"><strong>SERVICIO</strong></div>
+          </div>
+          <div class="col-md-4">
+            <p>Cantidad</p>
+            <div class="panel body"><strong>1</strong></div>
+          </div>
+          <div class="col-md-4">
+            <p>Tipo de cambio</p>
+            <div class="panel body"><strong>1.00	</strong></div>
+          </div>
+          <div class="col-md-8">
+            <p>Medio de Pago</p>
+            <div class="panel body"><strong>99 OTROS	</strong></div>
+          </div>
+          <div class="col-md-12">
+            <p>Régimen Fiscal</p>
+            <div class="panel body"><strong>RÉGIMEN GENERAL DE LEY PERSONAS MORALES</strong></div>
+          </div>
+        </div>
+        <div class="col-md-6 sp">
+          <div class="col-md-12 sp spt">
+            <div class="col-md-12">
+              <p class="text-right">VALOR DE FACTURA</p>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>28872300a</p>
-              </div>
+            <div class="col-md-3 baja">
+              <p class="text-right">Prima Neta $</p>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>100000040404099</p>
-              </div>
+            <div class="col-md-9">
+              <div class="panel body"><strong>$24,005.56</strong></div>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>029110cf-04fb-41ed-a798-035f062de987</p>
-              </div>
+          </div>
+          <div class="col-md-12 sp spt">
+            <div class="col-md-3 baja">
+              <p class="text-right">Derecho $</p>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>2017-01-29t11:49:48</p>
-              </div>
+            <div class="col-md-9">
+              <div class="panel body"><strong>$0.00</strong></div>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>100000056345290</p>
-              </div>
+          </div>
+          <div class="col-md-12 sp spt">
+            <div class="col-md-3 baja">
+              <p class="text-right">Recargos $</p>
             </div>
-            <div class="panel panel-undifined">
-              <div class="panel-body">
-                <p>Ciudad de México C.P. 11000</p>
-              </div>
+            <div class="col-md-9">
+              <div class="panel body"><strong>$0.00</strong></div>
+            </div>
+          </div>
+          <div class="col-md-12 sp spt">
+            <div class="col-md-3 baja">
+              <p class="text-right">I.V.A.<span class="panel body"><strong>16%</strong></span></p>
+            </div>
+            <div class="col-md-9">
+              <div class="panel body"><strong>$3,640.89</strong></div>
+            </div>
+          </div>
+          <div class="col-md-12 sp spt">
+            <div class="col-md-3 baja">
+              <p class="text-right">Importe Total $</p>
+            </div>
+            <div class="col-md-9">
+              <div class="panel body"><strong>$27,846.45</strong></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="factura">
+  <div id="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h5>FACTURA</h5>
-        </div>
-        <div class="col-md-2 emisorFac text-left">
-          <ul>
-            <li>Nombre del Emisor</li>
-            <li>Domicilio Fiscal</li>
-            <li>RFC Emisor</li>
-            <li>Régimen Fiscal</li>
-          </ul>
-        </div>
-        <div class="col-md-10 pnlsfactura">
-          <div class="panel panel-undifined">
-            <div class="panel-body">
-              <p>Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.</p>
-            </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-9">
+          <div class="col-md-12">
+            <p>IMPORTE CON LETRA					</p>
+            <div class="panel body"> <strong>*** (CUATROCIENTOS SEIS PESOS 07/100 M.N. )***</strong></div>
           </div>
-          <div class="panel1 panel-undifined">
-            <div class="panel-body">
-              <p>xxxx</p>
-            </div>
+          <div class="col-md-6">
+            <p>LUGAR, FECHA Y HORA DE EMISIÓN</p>
+            <div class="panel body"> <strong>2017-03-10T12:2356		</strong></div>
           </div>
-          <div class="panel1 panel-undifined">
-            <div class="panel-body">
-              <p>SSBB961118TIA</p>
-            </div>
+          <div class="col-md-6">
+            <p>FECHA DE GENERACIÓN</p>
+            <div class="panel body"> <strong>08 de March de 2017</strong></div>
           </div>
-          <div class="panel2 panel-undifined">
-            <div class="panel-body">
-              <P>601 GENERAL DE LEY DE PERSONAS MORALES</P>
-            </div>
-          </div>
+          <p class="azulrey">ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</p>
+          <p>RFC DEL PROVEEDOR DE CERTIFICACIÓN: BBA830831LJ2</p>
         </div>
       </div>
-      <div class="space">		</div>
+      <div class="row sellos">
+        <div class="col-md-12">
+          <p>SELLO DIGITAL DEL CFDI:</p>
+          <p>VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==</p>
+        </div>
+        <div class="col-md-12">
+          <p>SELLO DEL SAT:</p>
+          <p>JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9</p>
+        </div>
+        <div class="col-md-12">
+          <p>CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:</p>
+          <p>||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||</p>
+        </div>
+      </div>
     </div>
   </div>
 </html>
