@@ -42,71 +42,36 @@ block header
 						P.azulrey SEGUROS BBVA BANCOMER, S.A. DE C.V., GRUPO FINANCIERO BBVA BANCOMER.
 						P DOMICILIO FISCAL:
 						.space
-block factura
-		.factura
-			.container
-				.row
-					.col-md-12.text-center
-						h5 FACTURA
-					.col-md-12
-						.col-md-2.text-right
-								p Nombre del Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong XXX
-					.col-md-12
-						.col-md-2.text-right
-								p Domicilio Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong XXX
-					.col-md-12
-						.col-md-2.text-right
-								p RFC Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong XXX
-					.col-md-12
-						.col-md-2.text-right
-								p Régimen Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong XXX
-				.space
-				.space
 block facturaTitulo
+	.container.titulo
+		.row
+			.col-md-12.text-center
+				p
+					strong FACTURA
+			.col-md-12
+					P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
+					.space
+block pago
 	.container
 		.row
-			.col-md-12
-				h1.text-center FACTURA
-block pago
-		.container
-			.row
-				.col-md-12
-					P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
-				.space
-				.col-md-4
-					label.facturaParc PAGO EN UNA SOLA EXCIBICIÓN
-				.col-md-1
-					label.facturaParc Anual
-				.col-md-1.ajustePanel.panel.body
-					strong X
-				.col-md-1
-					label.facturaParc Semestral
-				.col-md-1.ajustePanel.panel.body
-					strong
-				.col-md-1
-					label.facturaParc Trimestral
-				.col-md-1.ajustePanel.panel.body
-					strong
-				.col-md-1
-					label.facturaParc Mensual
-				.col-md-1.ajustePanel.panel.body
-					strong
+			.col-md-4
+				label.facturaParc PAGO EN UNA SOLA EXCIBICIÓN
+			.col-md-1
+				label.facturaParc Anual
+			.col-md-1.ajustePanel.panel.body
+				strong X
+			.col-md-1
+				label.facturaParc Semestral
+			.col-md-1.ajustePanel.panel.body
+				strong
+			.col-md-1
+				label.facturaParc Trimestral
+			.col-md-1.ajustePanel.panel.body
+				strong
+			.col-md-1
+				label.facturaParc Mensual
+			.col-md-1.ajustePanel.panel.body
+				strong
 block content
 		#contenido
 			.container
@@ -198,36 +163,35 @@ block content
 						.col-md-12.sp.spt
 							.col-md-12
 								p.text-right VALOR DE FACTURA
-							.col-md-6
+							.col-md-3.baja
 								p.text-right Prima Neta $
-							.col-md-6
+							.col-md-9
 								.panel.body
 									strong $1.02
 						.col-md-12.sp.spt
-							.col-md-6
+							.col-md-3.baja
 								p.text-right Derecho $
-							.col-md-6
+							.col-md-9
 								.panel.body
 									strong $0.00
 						.col-md-12.sp.spt
-							.col-md-6
+							.col-md-3.baja
 								p.text-right Recargos $
-							.col-md-6
+							.col-md-9
 								.panel.body
 									strong $0.00
 						.col-md-12.sp.spt
-							.col-md-4
+							.col-md-3.baja
 								p.text-right I.V.A.
-							.col-md-2
-								.panel.body
-									strong 0%
-							.col-md-6
+									span.panel.body
+										strong 0%
+							.col-md-9
 								.panel.body
 									strong $0.00
 						.col-md-12.sp.spt
-							.col-md-6
+							.col-md-3.baja
 								p.text-right Importe Total $
-							.col-md-6
+							.col-md-9
 								.panel.body
 									strong $1.02
 block footer
