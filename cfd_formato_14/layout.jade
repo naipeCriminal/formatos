@@ -6,7 +6,7 @@ block header
 				.row
 					.col-md-12.head
 						.col-md-4
-							img(src="assets/img/bbva-bancomer.jpg", alt="")
+							img(src="../assets/img/bbva-salud.svg", alt="")
 						.col-md-8
 							.space
 							.col-md-6.text-right.grupnls
@@ -40,19 +40,11 @@ block header
 									.panel-body
 										strong 200010000005761
 
-						P.azulrey SEGUROS BBVA BANCOMER, S.A. DE C.V., GRUPO FINANCIERO BBVA BANCOMER.
+						P.azulrey BBVA BANCOMER SEGUROS SALUD S.A. DE C.V. GRUPO FINANCIERO BBVA BANCOMER.
 						P DOMICILIO FISCAL:
 						.space
-							.col-md-6.text-right.grupnls
-								p Lugar de expedición:	
-							.col-md-6
-								.panel.panel-undifined
-									.panel-body
-										strong XXX
-		.space
 block leyenda
-	#contenido
-		.container
+		.container.titulo
 			.row
 				.col-md-12
 					p.text-center
@@ -81,7 +73,7 @@ block content
 						strong 6
 			.row
 				.col-md-5
-					p periodo del recibo
+					p periodo del recibo (Dia/Mes/Año)
 					.panel.body 
 						strong lorem
 				.col-md-3
@@ -119,6 +111,8 @@ block content
 					p domicilo fiscal
 					.panel.body
 						strong lorem
+							br
+						br
 				.col-md-6.sp
 					.col-md-12.sp
 						.col-md-4
@@ -151,32 +145,33 @@ block content
 						.col-md-12
 							p.text-right VALOR DE FACTURA
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right PRIMA NETA
 						.col-md-9
 							.panel.body
 									strong $350.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right DERECHO
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right RECARGOS
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right I.V.A.
-								span.panel.body 16
+								span.panel.body
+									strong 0%
 						.col-md-9
 							.panel.body
 								strong $56.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right IMPORTE TOTAL
 						.col-md-9
 							.panel.body
@@ -203,49 +198,12 @@ block pago
 					label.facturaParc Mensual
 				.col-md-1.ajustePanel.panel.body
 					strong
-
-block factura
-		.factura
-			.container
-				.row
-					.col-md-12.text-center
-						h5 FACTURA
-					.col-md-12
-						.col-md-2.text-right
-								p Nombre del Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong 
-					.col-md-12
-						.col-md-2.text-right
-								p Domicilio Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-					.col-md-12
-						.col-md-2.text-right
-								p RFC Emisor
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-					.col-md-12
-						.col-md-2.text-right
-								p Régimen Fiscal
-						.col-md-10
-							.panel.panel-undefined
-								.panel-body
-									strong
-				.space
-				.space
 block footer
 	#footer
 		.container
 			.row
 				.col-md-3.sp
-					img(src="assets/img/qr_img.png")
+					img(src="../assets/img/qr_img.png")
 				.col-md-9.sp
 					.col-md-12
 						p IMPORTE CON LETRA					

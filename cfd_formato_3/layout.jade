@@ -6,7 +6,7 @@ block header
 				.row
 					.col-md-12.head
 						.col-md-4
-							img(src="assets/img/seguros.jpg", alt="")
+							img(src="../assets/img/seguros.jpg", alt="")
 						.col-md-8
 							.space
 							.col-md-6.text-right.grupnls
@@ -42,13 +42,17 @@ block header
 						P.azulrey BBVA BANCOMER
 						P DOMICILIO FISCAL:
 						.space
+block facturaTitulo
+	.container.titulo
+		.row
+			.col-md-12.text-center 
+				p
+					strong FACTURA
 block content
 	#contenido
 		.container
 			.row
 				.col-md-12
-					p.text-center
-						STRONG FACTURA
 					P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
 				.col-md-12
 					p.azulrey
@@ -124,33 +128,33 @@ block content
 						.col-md-12
 							p.text-right VALOR DE FACTURA
 					.col-md-12.sp.spt
-						.col-md-3
-							p.text-right PRIMA NETA
+						.col-md-3.baja
+							p.text-right PRIMA NETA $
 						.col-md-9
 							.panel.body
 									strong $350.00
 					.col-md-12.sp.spt
-						.col-md-3
-							p.text-right DERECHO
+						.col-md-3.baja
+							p.text-right DERECHO $
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
-							p.text-right RECARGOS
+						.col-md-3.baja
+							p.text-right RECARGOS $
 						.col-md-9
 							.panel.body
 								strong $0.00
 					.col-md-12.sp.spt
-						.col-md-3
+						.col-md-3.baja
 							p.text-right I.V.A.
 								span.panel.body 16
 						.col-md-9
 							.panel.body
 								strong $56.00
 					.col-md-12.sp.spt
-						.col-md-3
-							p.text-right IMPORTE TOTAL
+						.col-md-3.baja
+							p.text-right IMPORTE TOTAL $
 						.col-md-9
 							.panel.body
 								strong $406.00
@@ -159,7 +163,7 @@ block footer
 		.container
 			.row
 				.col-md-3.sp
-					img(src="assets/img/qr_img.png")
+					img(src="../assets/img/qr_img.png")
 				.col-md-9.sp
 					.col-md-12
 						p IMPORTE CON LETRA					
