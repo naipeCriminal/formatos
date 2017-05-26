@@ -152,82 +152,161 @@ block content
 						p Domicilio Fiscal
 						.panel.body
 							strong RET SAC XIB Num. MZ 6 Int 29, COL. SMZ 26, CANCÚN, QUINTANA ROO, MÉXICO, C.P. 77509
-					.col-md-6.sp
-						.col-md-7
-							p Unidad de Medida
-							.panel.body
-								strong SERVICIO
-						.col-md-5
-							p Cantidad
-							.panel.body
-								strong 1
-						.col-md-4
-							p Tipo de cambio
-							.panel.body
-								strong 1.00	
-						.col-md-8
-							p Medio de Pago
-							.panel.body
-								strong 99 OTROS	
-						.col-md-12
-							p Régimen Fiscal
-							.panel.body
-								strong RÉGIMEN GENERAL DE LEY PERSONAS MORALES
-					.col-md-6.sp
-						.col-md-12.sp.spt
-							.col-md-12
-								p.text-right VALOR TOTAL DE LA NOTA DE CARGO
-							.col-md-3.baja
-								p.text-right Prima Neta $
-							.col-md-9
-								.panel.body
-									strong $83.89
-						.col-md-12.sp.spt
-							.col-md-3.baja
-								p.text-right Derecho $
-							.col-md-9
-								.panel.body
-									strong $0.00
-						.col-md-12.sp.spt
-							.col-md-3.baja
-								p.text-right Recargos $
-							.col-md-9
-								.panel.body
-									strong $0.00
-						.col-md-12.sp.spt
-							.col-md-3.baja
-								p.text-right I.V.A.
-									span.panel.body
-										strong 16%
-							.col-md-9
-								.panel.body
-									strong $0.00
-						.col-md-12.sp.spt
-							.col-md-3.baja
-								p.text-right Importe Total $
-							.col-md-9
-								.panel.body
-									strong $83.89
 block footer
+
+	table(width="100%")
+		tr#contenido
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='5')
+							p UNIDAD DE MEDIDA
+						td(colspan='3')
+							p CANTIDAD
+						td(colspan='4')
+							p NO. CUENTA 
+					tr#contenido
+						td(colspan='5')
+							.panel.body 
+								strong 1
+						td(colspan='3')
+							.panel.body 
+								strong 1
+						td(colspan='4')
+							.panel.body 
+								strong noidentificado
+					tr#contenido
+						td(colspan='4')
+							p TIPO DE CAMBIO
+						td(colspan='8')
+							p MEDIO DE PAGO
+					tr#contenido
+						td(colspan='4')
+							.panel.body
+								strong 546789
+						td(colspan='8')
+							.panel.body
+								strong 98765
+					tr#contenido
+						td(colspan='12')
+							p RÉGIMEN FISCAL
+					tr#contenido
+						td(colspan='12')
+							.panel.body
+								strong regimen gral
+
+
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='12')
+							p VALOR DE FACTURA
+					tr#contenido
+						td(colspan='4')
+							p prima neta
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p DERECHO
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p RECARGOS
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='3')
+							p I.V.A.
+						td
+							.panel.body
+								strong 15%
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 2345356786970
+					tr#contenido
+						td(colspan='4')
+							p IMPORTE TOTAL
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 8976
+
+	table(width="100%")
+		tr#contenido
+			td(width="20%")
+			td(width="80%")
+		tr#contenido
+			td
+				img.img-responsive(src="../assets/img/qr_img.png")
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td							
+					tr#contenido
+						td(colspan='9')
+							p CANTIDAD CON LETRA
+							.panel.body
+								strong 121313
+					tr#contenido
+						td(colspan='6')
+							p LUGAR, FECHA Y HORA DE EMISIÓN
+							.panel.body
+								strong 121313									
+						td(colspan='4')
+							p FECHA DE GENARACIÓN
+							.panel.body
+								strong 121313
+
 	#footer
 		.container
-			.row
-				.col-md-3.sp
-					img(src="../assets/img/qr_img.png")
-				.col-md-9.sp
-					.col-md-12
-						p IMPORTE CON LETRA					
-						.panel.body 
-							strong *** (OCHENTA Y TRES PESOS 89/100 M.N. )***
-					.col-md-6
-						p LUGAR, FECHA Y HORA DE EMISIÓN
-						.panel.body 
-							strong 2016-10-07T18:11:05		
-					.col-md-6
-						p FECHA DE GENERACIÓN
-						.panel.body 
-							strong 1 de August de 2016
-					p.azulrey ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI
 			.row.sellos
 				.col-md-12
 					p SELLO DIGITAL DEL CFDI:

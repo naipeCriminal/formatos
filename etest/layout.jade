@@ -1,114 +1,5 @@
 extends formatos
 
-
-
-block test
-table
-	tr
-		td
-			table
-				tr
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-				tr
-					td(colspan='5')
-						p label
-					td(colspan='3')
-						p label
-					td(colspan='4')
-						p label
-				tr
-					td(colspan='5')
-						p hola mundoi
-					td(colspan='3')
-						p hola mundoi
-					td(colspan='4')
-						p hola mundoi
-				tr
-					td(colspan='4')
-						p hola label
-					td(colspan='8')
-						p hola label
-				tr
-					td(colspan='4')
-						p hola mundoi
-					td(colspan='8')
-						p hola mundoi
-				tr
-					td(colspan='12')
-						p hola mundoi,hola mundoi
-				tr
-					td(colspan='12')
-						p hola mundoi,hola mundoi
-
-
-		td
-			table
-				tr
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-					td
-				tr
-					td(colspan='12')
-						p label
-				tr
-					td(colspan='4')
-						p prima neta
-					td
-						p $
-					td(colspan='7')
-						p 875586586
-				tr
-					td(colspan='4')
-						p prima neta
-					td
-						p $
-					td(colspan='7')
-						p 875586586
-				tr
-					td(colspan='4')
-						p prima neta
-					td
-						p $
-					td(colspan='7')
-						p 875586586
-				tr	
-					td(colspan='3')
-						p iva
-					td
-						p 15%
-					td
-						p $
-					td(colspan='7')
-						p 2345356786970
-				tr
-					td(colspan='4')
-						p importe total
-					td
-						p $
-					td(colspan='7')
-						p 8976
-
-
 block header
 		.cabecera
 			.container
@@ -412,35 +303,170 @@ block content
 								.panel.body
 									strong $27,846.45
 block footer
-	#footer
-		.container
-			.row
-				.col-md-3
-				.col-md-9
-					.col-md-12
-						p IMPORTE CON LETRA					
-						.panel.body 
-							strong *** (CUATROCIENTOS SEIS PESOS 07/100 M.N. )***
-					.col-md-6
-						p LUGAR, FECHA Y HORA DE EMISIÓN
-						.panel.body 
-							strong 2017-03-10T12:2356		
-					.col-md-6
-						p FECHA DE GENERACIÓN
-						.panel.body 
-							strong 08 de March de 2017
-					p.azulrey ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI
-					p RFC DEL PROVEEDOR DE CERTIFICACIÓN: BBA830831LJ2
-			.row.sellos
-				.col-md-12
-					p SELLO DIGITAL DEL CFDI:
-					p VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
-				.col-md-12
-					p SELLO DEL SAT:
-					p JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
-				.col-md-12
-					p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
-					p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
+
+	table(width="100%")
+		tr#contenido
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='5')
+							p UNIDAD DE MEDIDA
+						td(colspan='3')
+							p CANTIDAD
+						td(colspan='4')
+							p NO. CUENTA 
+					tr#contenido
+						td(colspan='5')
+							.panel.body 
+								strong 1
+						td(colspan='3')
+							.panel.body 
+								strong 1
+						td(colspan='4')
+							.panel.body 
+								strong noidentificado
+					tr#contenido
+						td(colspan='4')
+							p TIPO DE CAMBIO
+						td(colspan='8')
+							p MEDIO DE PAGO
+					tr#contenido
+						td(colspan='4')
+							.panel.body
+								strong 546789
+						td(colspan='8')
+							.panel.body
+								strong 98765
+					tr#contenido
+						td(colspan='12')
+							p RÉGIMEN FISCAL
+					tr#contenido
+						td(colspan='12')
+							.panel.body
+								strong regimen gral
+
+
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='12')
+							p VALOR DE FACTURA
+					tr#contenido
+						td(colspan='4')
+							p prima neta
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p DERECHO
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p RECARGOS
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='3')
+							p I.V.A.
+						td
+							.panel.body
+								strong 15%
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 2345356786970
+					tr#contenido
+						td(colspan='4')
+							p IMPORTE TOTAL
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 8976
+
+	table(width="100%")
+		tr#contenido
+			td(width="20%")
+			td(width="80%")
+		tr#contenido
+			td
+				img.img-responsive(src="../assets/img/qr_img.png")
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td							
+					tr#contenido
+						td(colspan='9')
+							p CANTIDAD CON LETRA
+							.panel.body
+								strong 121313
+					tr#contenido
+						td(colspan='6')
+							p LUGAR, FECHA Y HORA DE EMISIÓN
+							.panel.body
+								strong 121313									
+						td(colspan='4')
+							p FECHA DE GENARACIÓN
+							.panel.body
+								strong 121313
+
+#footer
+	.container
+		.row.sellos
+			.col-md-12
+				p SELLO DIGITAL DEL CFDI:
+				p VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
+			.col-md-12
+				p SELLO DEL SAT:
+				p JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
+			.col-md-12
+				p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
+				p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
 
 block nuevo
 	table(width='1200', border='1', align='center')
