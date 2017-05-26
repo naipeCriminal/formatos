@@ -99,88 +99,162 @@ block content
 					p DOMICILIO FISCAL
 					.panel.body
 						strong CALZADA CONSTITUCIÓN Y BENJAMIN HILL 422, COL, LA MESA, SAN LUIS RÍO COLORADO, SONORA, MÉXICO, C.P. 834220
-				.col-md-6.sp
-					.col-md-12.sp
-						.col-md-4
-							p UNIDAD DE MEDIDA
-							.panel.body
-								strong SERVICIO
-						.col-md-4
-							p CANTIDAD
-							.panel.body
-								strong 1
-						.col-md-4
-							p NO. CUENTA DE PAGO
-							.panel.body
-								strong 30253
-					.col-md-12.sp
-						.col-md-4
-							p TIPO DE CAMBIO
-							.panel.body
-								strong 1.00	
-						.col-md-8
-							p MEDIO DE PAGO
-							.panel.body
-								strong 03 TRANSFERENCIA ELECTRONICA DE FONDOS	
-						.col-md-12
-							p RÉGIMEN FISCAL
-							.panel.body
-								strong REGIMÉN GENERAL DE LEY PERSONAS MORALES
-				.col-md-6.sp
-					.col-md-12.sp
-						.col-md-12
-							p.text-right VALOR DE FACTURA
-					.col-md-12.sp.spt
-						.col-md-3.baja
-							p.text-right PRIMA NETA $
-						.col-md-9
-							.panel.body
-									strong $350.00
-					.col-md-12.sp.spt
-						.col-md-3.baja
-							p.text-right DERECHO $
-						.col-md-9
-							.panel.body
-								strong $0.00
-					.col-md-12.sp.spt
-						.col-md-3.baja
-							p.text-right RECARGOS $
-						.col-md-9
-							.panel.body
-								strong $0.00
-					.col-md-12.sp.spt
-						.col-md-3.baja
-							p.text-right I.V.A.
-								span.panel.body 16
-						.col-md-9
-							.panel.body
-								strong $56.00
-					.col-md-12.sp.spt
-						.col-md-3.baja
-							p.text-right IMPORTE TOTAL $
-						.col-md-9
-							.panel.body
-								strong $406.00
+
 block footer
+
+	table(width="100%")
+		tr#contenido
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='5')
+							p UNIDAD DE MEDIDA
+						td(colspan='3')
+							p CANTIDAD
+						td(colspan='4')
+							p NO. CUENTA 
+					tr#contenido
+						td(colspan='5')
+							.panel.body 
+								strong 1
+						td(colspan='3')
+							.panel.body 
+								strong 1
+						td(colspan='4')
+							.panel.body 
+								strong noidentificado
+					tr#contenido
+						td(colspan='4')
+							p TIPO DE CAMBIO
+						td(colspan='8')
+							p MEDIO DE PAGO
+					tr#contenido
+						td(colspan='4')
+							.panel.body
+								strong 546789
+						td(colspan='8')
+							.panel.body
+								strong 98765
+					tr#contenido
+						td(colspan='12')
+							p RÉGIMEN FISCAL
+					tr#contenido
+						td(colspan='12')
+							.panel.body
+								strong regimen gral
+
+
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+					tr#contenido
+						td(colspan='12')
+							p VALOR DE FACTURA
+					tr#contenido
+						td(colspan='4')
+							p prima neta
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p DERECHO
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='4')
+							p RECARGOS
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 875586586
+					tr#contenido
+						td(colspan='3')
+							p I.V.A.
+						td
+							.panel.body
+								strong 15%
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 2345356786970
+					tr#contenido
+						td(colspan='4')
+							p IMPORTE TOTAL
+						td
+							p $
+						td(colspan='7')
+							.panel.body
+								strong 8976
+
+	table(width="100%")
+		tr#contenido
+			td(width="20%")
+			td(width="80%")
+		tr#contenido
+			td
+				img.img-responsive(src="../assets/img/qr_img.png")
+			td
+				table(width="100%")
+					tr#contenido
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td
+						td							
+					tr#contenido
+						td(colspan='9')
+							p CANTIDAD CON LETRA
+							.panel.body
+								strong 121313
+					tr#contenido
+						td(colspan='6')
+							p LUGAR, FECHA Y HORA DE EMISIÓN
+							.panel.body
+								strong 121313									
+						td(colspan='4')
+							p FECHA DE GENARACIÓN
+							.panel.body
+								strong 121313
+
 	#footer
 		.container
-			.row
-				.col-md-3.sp
-					img(src="../assets/img/qr_img.png")
-				.col-md-9.sp
-					.col-md-12
-						p IMPORTE CON LETRA					
-						.panel.body 
-							strong *** (CUATROCIENTOS SEIS PESOS 07/100 M.N. )***
-					.col-md-6
-						p LUGAR, FECHA Y HORA DE EMISIÓN
-						.panel.body 
-							strong 2017-03-10T12:2356		
-					.col-md-6
-						p FECHA DE GENERACIÓN
-						.panel.body 
-							strong 08 de March de 2017
-					p.azulrey ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI
 			.row.sellos
 				.col-md-12
 					p SELLO DIGITAL DEL CFDI:
