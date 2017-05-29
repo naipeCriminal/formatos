@@ -2,7 +2,7 @@ extends formatos
 
 block footer
 
-	table(width="100%")
+	table(width="1200")
 		tr#contenido
 			td
 				table(width="100%")
@@ -55,10 +55,8 @@ block footer
 						td(colspan='12')
 							.panel.body
 								strong regimen gral
-
-
 			td
-				table(width="100%")
+				table(width="90%")
 					tr#contenido
 						td
 						td
@@ -119,60 +117,42 @@ block footer
 							.panel.body
 								strong 8976
 
-	table(width="100%")
-		tr#contenido
-			td(width="20%")
-			td(width="80%")
-		tr#contenido
-			td
-				img.img-responsive(src="../assets/img/qr_img.png")
-			td
-				table(width="100%")
-					tr#contenido
-						td
-						td
-						td
-						td
-						td
-						td
-						td
-						td
-						td							
-					tr#contenido
-						td(colspan='9')
-							p CANTIDAD CON LETRA
-							.panel.body
-								strong 121313
-					tr#contenido
-						td(colspan='6')
-							p LUGAR, FECHA Y HORA DE EMISIÓN
-							.panel.body
-								strong 121313									
-						td(colspan='4')
-							p FECHA DE GENARACIÓN
-							.panel.body
-								strong 121313
-
+			table(width="100%")
+				tr#contenido
+					td(width="20%")
+					td(width="80%")
+				tr#contenido
+					td
+						img.img-responsive(src="../assets/img/qr_img.png")
+					td
+						table(width="100%")
+							tr#contenido
+								td
+								td
+								td
+								td
+								td
+								td
+								td
+								td
+								td							
+							tr#contenido
+								td(colspan='9')
+									p CANTIDAD CON LETRA
+									.panel.body
+										strong 121313
+							tr#contenido
+								td(colspan='6')
+									p LUGAR, FECHA Y HORA DE EMISIÓN
+									.panel.body
+										strong 121313									
+								td(colspan='4')
+									p FECHA DE GENARACIÓN
+									.panel.body
+										strong 121313
 
 	#footer
 		.container
-			.row
-				.col-md-3.sp
-					img(src="../assets/img/qr_img.png")
-				.col-md-9.sp
-					.col-md-12
-						p IMPORTE CON LETRA					
-						.panel.body 
-							strong *** (CUARENTA Y UN MIL SETECIENTOS OCHENTA Y CUATRO PESOS 26/100 M.N. )***
-					.col-md-6
-						p LUGAR, FECHA Y HORA DE EMISIÓN
-						.panel.body 
-							strong 2014-02-07T02:00:46		
-					.col-md-6
-						p FECHA DE GENERACIÓN
-						.panel.body 
-							strong 1 de October de 2016
-					p.azulrey ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI
 			.row.sellos
 				.col-md-12
 					p SELLO DIGITAL DEL CFDI:
@@ -183,7 +163,7 @@ block footer
 				.col-md-12
 					p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
 					p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
-
+	
 block nuevo
 	table(width='1200', border='0', align='center')
 	tr
@@ -249,7 +229,7 @@ block nuevo
 				tr.head
 					td
 						p R.F.C.:
-				tr
+				tr#contenido
 					td(colspan='4')
 							div(align='center')
 								p
