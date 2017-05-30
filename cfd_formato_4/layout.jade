@@ -126,7 +126,7 @@ block nuevo
 					td(width='50', height='23') Cantidad
 					td(width='5')
 					td(width='549') Descripción
-					td(width='5')
+					td(width='1')
 					td(width='50') Precio
 					td(width='5')
 					td(width='50') Importe
@@ -184,9 +184,9 @@ block nuevofooter
 									td(colspan='5')
 										p UNIDAD DE MEDIDA
 									td(colspan='3')
-										p CANTIDAD
+										p MONEDA
 									td(colspan='4')
-										p NO. CUENTA 
+										p NO. CUENTA DE PAGO
 								tr#contenido
 									td(colspan='5')
 										.panel.body 
@@ -198,24 +198,23 @@ block nuevofooter
 										.panel.body 
 											strong NO IDENTIFICADO
 								tr#contenido
-									td(colspan='4')
+									td(colspan='6')
+										p REGIMEN FISCAL
+									td(colspan='3')
 										p TIPO DE CAMBIO
-									td(colspan='8')
+									td(colspan='3')
 										p MEDIO DE PAGO
 								tr#contenido
-									td(colspan='4')
-										.panel.body
-											strong 546789
-									td(colspan='8')
-										.panel.body
-											strong 98765
-								tr#contenido
-									td(colspan='12')
-										p RÉGIMEN FISCAL
-								tr#contenido
-									td(colspan='12')
+									td(colspan='6')
 										.panel.body
 											strong REGIMEN GENERAL DE LEY DE PERSONAS MORALES
+									td(colspan='3')
+										.panel.body
+											strong 546789		
+									td(colspan='3')
+										.panel.body
+											strong 98765
+								
 						td
 							table(width='100%', border='0', align='center')
 								tr#contenido
@@ -231,28 +230,10 @@ block nuevofooter
 									td
 									td
 									td
-								tr#contenido
-									td(colspan='12',align='right')
-										p VALOR DE FACTURA
+								
 								tr#contenido
 									td(colspan='4',align='right')
-										p prima neta
-									td
-										p $
-									td(colspan='7')
-										.panel.body
-											strong $1.02
-								tr#contenido
-									td(colspan='4',align='right')
-										p DERECHO
-									td
-										p $
-									td(colspan='7')
-										.panel.body
-											strong $0.00
-								tr#contenido
-									td(colspan='4',align='right')
-										p RECARGOS
+										p SUBTOTAL
 									td
 										p $
 									td(colspan='7')
@@ -271,7 +252,7 @@ block nuevofooter
 											strong $0.00
 								tr#contenido
 									td(colspan='4',align='right')
-										p IMPORTE TOTAL
+										p  	TOTAL
 									td
 										p $
 									td(colspan='7')
