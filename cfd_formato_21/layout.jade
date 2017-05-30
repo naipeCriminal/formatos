@@ -2,12 +2,12 @@ extends formatos
 
 block nuevoheader
 	table(width='100%', border='0', align='center')
-		tr
+		tr.cabecera.wibe
 			td
 				table(width='95%', border='0', align='center')
 					tr.head
 						td(colspan='2', rowspan='5')
-							img(src="../assets/img/bbva-seguros.svg", alt="")
+							img(src="../assets/img/LogoWIbe.jpg", alt="")
 						td(width='26%')
 							div(align='right')
 								.grupnls
@@ -53,7 +53,7 @@ block nuevoheader
 								.panel-body
 									strong 0
 					tr.head
-						td(width='23%')
+						td(colspan='2')
 							P.azulrey Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.	
 						td(colspan='3', rowspan='4')  
 					tr.head
@@ -75,30 +75,30 @@ block nuevoContent
 							div(align='center')
 								p
 									strong FACTURA
-					tr
+					tr.titulo.wibe
 						td(colspan='12')
 							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
-					tr
+					tr#contenido.wibe
 						td(colspan='12')
 							.col-md-4
-								label.facturaParc PAGO EN UNA SOLA EXHIBICIÓN
+								label.azulrey PAGO EN UNA SOLA EXHIBICIÓN
 							.col-md-1
-								label.facturaParc Anual
+								label.azulrey Anual
 							.col-md-1.ajustePanel.panel.body
 								strong X
 							.col-md-1
-								label.facturaParc Semestral
+								label.azulrey Semestral
 							.col-md-1.ajustePanel.panel.body
 								strong
 							.col-md-1
-								label.facturaParc Trimestral
+								label.azulrey Trimestral
 							.col-md-1.ajustePanel.panel.body
 								strong
 							.col-md-1
-								label.facturaParc Mensual
+								label.azulrey Mensual
 							.col-md-1.ajustePanel.panel.body
 								strong 
-					tr#contenido
+					tr#contenido.wibe
 						td(colspan='3')
 							p Seguro de
 							.panel.body 
@@ -115,7 +115,7 @@ block nuevoContent
 							p Dias que Cubre
 							.panel.body
 								strong 31
-					tr#contenido
+					tr#contenido.wibe
 						td(colspan='4')
 							p Periodo del Recibo (Día/Mes/ Año)
 							.panel.body
@@ -128,7 +128,7 @@ block nuevoContent
 							p Folio Fiscal Original:
 							.panel.body
 								strong XXX
-					tr#contenido
+					tr#contenido.wibe
 						td(colspan='4')
 							p Serie Folio Fiscal Original
 							.panel.body
@@ -141,7 +141,7 @@ block nuevoContent
 							p  Monto Folio Fiscal Original:
 							.panel.body
 								strong $0.00
-					tr#contenido
+					tr#contenido.wibe
 						td(colspan='8')
 							p Nombre del contratante
 							.panel.body
@@ -150,7 +150,7 @@ block nuevoContent
 							p R.F.C. del Contratante
 							.panel.body
 								strong XAXX010101000
-					tr#contenido
+					tr#contenido.wibe
 						td(colspan='12')  
 							p Domicilio Fiscal
 							.panel.body
@@ -159,7 +159,7 @@ block nuevoContent
 								br
 block nuevofooter
 	table(width='100%', border='0', align='center')
-		tr
+		tr#contenido.wibe
 			td
 				table(width='95%', border='0', align='center')
 					tr#contenido
