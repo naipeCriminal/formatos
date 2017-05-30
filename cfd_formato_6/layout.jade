@@ -7,11 +7,11 @@ block nuevoheader
 				table(width='95%', border='0', align='center')
 					tr.head
 						td(colspan='2', rowspan='5')
-							img(src="../assets/img/bbva-seguros.svg", alt="")
+							img(src="../assets/img/seguros.jpg", alt="")
 						td(width='26%')
 							div(align='right')
 								.grupnls
-									p SERIE:
+									p SERIE DEL CFD:
 						td(width='22%')
 							.panel.panel-undefined
 								.panel-body
@@ -20,41 +20,23 @@ block nuevoheader
 						td
 							div(align='right')
 								.grupnls
-									p NO. DE SERIE DEL CERTIFICADO:
+									p FOLIO No.
 						td(width='22%')
 							.panel.panel-undifined
 								.panel-body
-									strong 00001000000800751715
+									strong 00001000000800751715	
+					tr
+						td(colspan='2')
+							.space
+					tr
+						td(colspan='2')
+							.space
+					tr
+						td(colspan='2')
+							.space
 					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p FOLIO FISCAL:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong XXX
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p FECHA Y HORA DE CERTIFICACIÓN:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong 2016-10-07T18:11:12
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p NO. DE SERIE DEL CERTIFICADO SAT:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong 0
-					tr.head
-						td(width='23%')
-							P.azulrey Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.	
+						td(colspan='4')
+							P.azulrey BBVA Bancomer.	
 						td(colspan='3', rowspan='4')  
 					tr.head
 						td
@@ -74,30 +56,24 @@ block nuevoContent
 						td(colspan='12')
 							div(align='center')
 								p
-									strong FACTURA
+									strong NOTA DE CREDITO
 					tr
 						td(colspan='12')
 							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
-					tr
-						td(colspan='12')
-							.col-md-4
+					tr.head.folio
+						td(colspan='10')
 								label.facturaParc PAGO EN UNA SOLA EXHIBICIÓN
-							.col-md-1
-								label.facturaParc Anual
-							.col-md-1.ajustePanel.panel.body
-								strong X
-							.col-md-1
-								label.facturaParc Semestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Trimestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Mensual
-							.col-md-1.ajustePanel.panel.body
-								strong 
+						td
+							div(align='right')
+								.grupnls
+									p Fecha de CFD.
+						td
+							.panel.panel-undifined
+								.panel-body
+									strong 00001000000800751715 
+					tr
+						td
+							.space
 					tr#contenido
 						td(colspan='3')
 							p Seguro de
@@ -112,35 +88,26 @@ block nuevoContent
 							.panel.body
 								strong 0
 						td(colspan='3')
-							p Dias que Cubre
+							p Moneda
 							.panel.body
 								strong 31
 					tr#contenido
-						td(colspan='4')
-							p Periodo del Recibo (Día/Mes/ Año)
-							.panel.body
-								strong 29/07/2016 al 29/08/2016 
-						td(colspan='4')
-							p Moneda:
-							.panel.body
-								strong Pesos
-						td(colspan='4')
+						td(colspan='3')
 							p Folio Fiscal Original:
 							.panel.body
-								strong XXX
-					tr#contenido
-						td(colspan='4')
+								strong 29/07/2016 al 29/08/2016 
+						td(colspan='3')
 							p Serie Folio Fiscal Original
 							.panel.body
-								strong XXX
-						td(colspan='4')
-							p Fecha Folio Fiscal Original
+								strong Pesos
+						td(colspan='3')
+							p Fecha Folio Fiscal Original:
 							.panel.body
 								strong XXX
-						td(colspan='4')
-							p  Monto Folio Fiscal Original:
+						td(colspan='3')
+							p Monto Folio Fiscal Original
 							.panel.body
-								strong $0.00
+								strong XXX
 					tr#contenido
 						td(colspan='8')
 							p Nombre del contratante
@@ -179,22 +146,17 @@ block nuevofooter
 									td
 									td
 								tr#contenido
-									td(colspan='5')
+									td(colspan='6')
 										p UNIDAD DE MEDIDA
-									td(colspan='3')
-										p CANTIDAD
-									td(colspan='4')
-										p NO. CUENTA 
+									td(colspan='6')
+										p CANTIDAD 
 								tr#contenido
-									td(colspan='5')
+									td(colspan='6')
 										.panel.body 
 											strong NO APLICA
-									td(colspan='3')
+									td(colspan='6')
 										.panel.body 
 											strong 1
-									td(colspan='4')
-										.panel.body 
-											strong NO IDENTIFICADO
 								tr#contenido
 									td(colspan='4')
 										p TIPO DE CAMBIO
@@ -231,7 +193,7 @@ block nuevofooter
 									td
 								tr#contenido
 									td(colspan='12',align='right')
-										p VALOR DE FACTURA
+										p Nota de Credito
 								tr#contenido
 									td(colspan='4',align='right')
 										p prima neta
@@ -301,18 +263,11 @@ block nuevofooter
 										.panel.body
 											strong ***(OCHENTA Y TRES PESOS 89/100 M.N.)***
 								tr#contenido
-									td(colspan='6')
-										p LUGAR, FECHA Y HORA DE EMISIÓN
+									td(colspan='12')
+										p LUGAR DE EXPEDICIÓN
 										.panel.body
 											strong 2016-10-2017T18:11:05
-									td(colspan='4')
-										p FECHA DE GENERACIÓN
-										.panel.body
-											strong 1 DE AUGUST DE 2016
 				table(width='90%', border='0', align='center')
-					tr#contenido
-						td(width="100%", align="center")
-							P.azulrey Este documento es una representación impresa de un CFDI
 					tr
 						td(colspan='12')
 							#footer
@@ -327,4 +282,27 @@ block nuevofooter
 										.col-md-12
 											p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
 											p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
-
+	table(width='100%', border='0', align='center')
+		tr
+			td
+				table(width='95%', border='0', align='center')
+					tr.sellos
+						td(colspan='12')
+							P.azulrey Este documento es una representación impresa de un CFDI
+					tr#contenido
+						td(colspan='3')
+							p No. de Aprobación
+							.panel.body 
+								strong VIDA
+						td(colspan='3')
+							p Año de Aprobación
+							.panel.body
+								strong 100741808  
+						td(colspan='3')
+							p No. de Serie del CSD
+							.panel.body
+								strong 0
+						td(colspan='3')
+							p No. Cuenta de Pago
+							.panel.body
+								strong 31
