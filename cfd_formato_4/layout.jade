@@ -7,7 +7,7 @@ block nuevo
 			table(width='95%', border='0', align='center')
 				tr.head
 					td(colspan='2', rowspan='5')
-						img(src="../assets/img/seguros.jpg", alt="")
+						img(src="../assets/img/Logo_BBVA.PNG", alt="")
 					td(width='26%')
 						div(align='right')
 							.grupnls
@@ -65,11 +65,21 @@ block nuevo
 				tr.head
 					td
 						p R.F.C.:
-				tr#contenido
-					td(colspan='4')
+
+block nuevoContent
+	table(width='100%', border='0', align='center')
+		tr
+			td
+				table(width='95%', border='0', align='center')
+					tr
+						td(colspan='12')
 							div(align='center')
 								p
 									strong FACTURA
+					tr.head.folio
+						td(colspan='10')
+								label.facturaParc PAGO EN UNA SOLA EXHIBICIÓN
+					
 			table(width='95%', border='0', align='center')
 				tr#contenido
 					td(height='23', colspan='2') Nombre del Interesado
@@ -111,7 +121,7 @@ block nuevo
 			table(width='95%', border='0', align='center')
 				tr#contenido
 					td(height='23', colspan='2') Estado
-					td(width='330') Telefonos
+					td(width='330') Telefono(s)
 				tr#contenido
 					td(height='23', colspan='2')
 						.panel.body
@@ -158,6 +168,7 @@ block nuevo
 								strong 1 
 								br
 								strong  
+
 
 block nuevofooter
 	table(width='100%', border='0', align='center')
