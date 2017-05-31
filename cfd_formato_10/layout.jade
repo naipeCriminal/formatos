@@ -1,70 +1,71 @@
 extends formatos
 
-block nuevoheader
+block nuevo
 	table(width='100%', border='0', align='center')
-		tr
-			td
-				table(width='95%', border='0', align='center')
-					tr.head
-						td(colspan='2', rowspan='5')
-							img(src="../assets/img/bbva-seguros.svg", alt="")
-						td(width='26%')
-							div(align='right')
-								.grupnls
-									p SERIE:
-						td(width='22%')
-							.panel.panel-undefined
-								.panel-body
-									strong KE
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p NO. DE SERIE DEL CERTIFICADO:
-						td(width='22%')
-							.panel.panel-undifined
-								.panel-body
-									strong 00001000000800751715
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p FOLIO FISCAL:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong XXX
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p FECHA Y HORA DE CERTIFICACIÓN:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong 2016-10-07T18:11:12
-					tr.head
-						td
-							div(align='right')
-								.grupnls
-									p NO. DE SERIE DEL CERTIFICADO SAT:
-						td
-							.panel.panel-undifined
-								.panel-body
-									strong 0
-					tr.head
-						td(width='23%')
-							P.azulrey Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.	
-						td(colspan='3', rowspan='4')  
-					tr.head
-						td
-							P Domicilio Fiscal:
-					tr.head
-						td
-							P Dirección.:
-					tr.head
-						td
-							p R.F.C.:
+	tr
+		td
+			table(width='95%', border='0', align='center')
+				tr.head
+					td(colspan='2', rowspan='5')
+						img(src="../assets/img/seguros.jpg", alt="")
+					td(width='26%')
+						div(align='right')
+							.grupnls
+								p SERIE:
+					td(width='22%')
+						.panel.panel-undefined
+							.panel-body
+								strong KE
+				tr.head
+					td
+						div(align='right')
+							.grupnls
+								p NO. DE SERIE DEL CERTIFICADO:
+					td(width='22%')
+						.panel.panel-undifined
+							.panel-body
+								strong 00001000000800751715
+				tr.head
+					td
+						div(align='right')
+							.grupnls
+								p FOLIO FISCAL:
+					td
+						.panel.panel-undifined
+							.panel-body
+								strong XXX
+				tr.head
+					td
+						div(align='right')
+							.grupnls
+								p FECHA Y HORA DE CERTIFICACIÓN:
+					td
+						.panel.panel-undifined
+							.panel-body
+								strong 2016-10-07T18:11:12
+				tr.head
+					td
+						div(align='right')
+							.grupnls
+								p NO. DE SERIE DEL CERTIFICADO SAT:
+					td
+						.panel.panel-undifined
+							.panel-body
+								strong 0
+				tr.head
+					td(width='23%')
+						P.azulrey BBVA Bancomer	
+					td(colspan='3', rowspan='4')  
+				tr.head
+					td
+						P Domicilio Fiscal:
+				tr.head
+					td
+						P Dirección.:
+				tr.head
+					td
+						p R.F.C.:
+
 block nuevoContent
 	table(width='100%', border='0', align='center')
 		tr
@@ -75,88 +76,106 @@ block nuevoContent
 							div(align='center')
 								p
 									strong FACTURA
-					tr
-						td(colspan='12')
-							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
-					tr
-						td(colspan='12')
-							.col-md-4
+					tr.head.folio
+						td(colspan='10')
 								label.facturaParc PAGO EN UNA SOLA EXHIBICIÓN
-							.col-md-1
-								label.facturaParc Anual
-							.col-md-1.ajustePanel.panel.body
-								strong X
-							.col-md-1
-								label.facturaParc Semestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Trimestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Mensual
-							.col-md-1.ajustePanel.panel.body
-								strong 
-					tr#contenido
-						td(colspan='3')
-							p Seguro de
-							.panel.body 
-								strong VIDA
-						td(colspan='3')
-							p Póliza No.
-							.panel.body
-								strong 100741808  
-						td(colspan='3')
-							p Inciso
-							.panel.body
-								strong 0
-						td(colspan='3')
-							p Dias que Cubre
-							.panel.body
-								strong 31
-					tr#contenido
-						td(colspan='4')
-							p Periodo del Recibo (Día/Mes/ Año)
-							.panel.body
-								strong 29/07/2016 al 29/08/2016 
-						td(colspan='4')
-							p Moneda:
-							.panel.body
-								strong Pesos
-						td(colspan='4')
-							p Folio Fiscal Original:
-							.panel.body
-								strong XXX
-					tr#contenido
-						td(colspan='4')
-							p Serie Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p Fecha Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p  Monto Folio Fiscal Original:
-							.panel.body
-								strong $0.00
-					tr#contenido
-						td(colspan='8')
-							p Nombre del contratante
-							.panel.body
-								strong PUBLICO EN GENERAL
-						td(colspan='4')
-							p R.F.C. del Contratante
-							.panel.body
-								strong XAXX010101000
-					tr#contenido
-						td(colspan='12')  
-							p Domicilio Fiscal
-							.panel.body
-								strong RET SAC XIB Num. MZ 6 Int 29, COL. SMZ 26, CANCÚN, QUINTANA ROO, MÉXICO, C.P. 77509
-									br
+						td
+							div(align='right')
+								.grupnls
+									p Fecha de CFD.
+						td
+							.panel.panel-undifined
+								.panel-body
+									strong 00001000000800751715
+			table(width='95%', border='0', align='center')
+				tr#contenido
+					td(height='23', colspan='2') Nombre del Interesado
+					td(width='330') R.F.C. Contratante
+				tr#contenido
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1  
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1 
+				tr#contenido
+					td(height='23', colspan='2') Domicilio, calle, y numero
+					td Colonia, fraccionamiento o localidad
+				tr#contenido
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1  
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1
+			table(width='95%', border='0', align='center')
+				tr#contenido
+					td(height='23', colspan='2') Codigo Postal
+					td(width='649') Ciudad
+				tr#contenido
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1  
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1 
+			table(width='95%', border='0', align='center')
+				tr#contenido
+					td(height='23', colspan='2') Estado
+					td(width='330') Telefonos
+				tr#contenido
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1  
+					td(height='23', colspan='2')
+						.panel.body
+							p 
+								strong 1 
+			table(width='95%', border='0', align='center')
+				tr#contenido
+					td(width='50', height='23') Cantidad
+					td(width='5')
+					td(width='549') Descripción
+					td(width='1')
+					td(width='50') Precio
+					td(width='5')
+					td(width='50') Importe
+				tr#contenido
+					td(height='23')
+						.panel.body
+							p 
+								strong 1 
 								br
+								strong  
+					td(height='3')
+					td(height='23')
+						.panel.body
+							p 
+								strong 1 
+								br
+								strong    
+					td(height='3') 
+					td(height='23')
+						.panel.body
+							p 
+								strong 1 
+								br
+								strong  
+					td(height='3')
+					td(height='23')
+						.panel.body
+							p 
+								strong 1 
+								br
+								strong  
+
 block nuevofooter
 	table(width='100%', border='0', align='center')
 		tr
@@ -182,9 +201,9 @@ block nuevofooter
 									td(colspan='5')
 										p UNIDAD DE MEDIDA
 									td(colspan='3')
-										p CANTIDAD
+										p MONEDA
 									td(colspan='4')
-										p NO. CUENTA 
+										p NO. CUENTA DE PAGO
 								tr#contenido
 									td(colspan='5')
 										.panel.body 
@@ -196,24 +215,23 @@ block nuevofooter
 										.panel.body 
 											strong NO IDENTIFICADO
 								tr#contenido
-									td(colspan='4')
+									td(colspan='6')
+										p REGIMEN FISCAL
+									td(colspan='3')
 										p TIPO DE CAMBIO
-									td(colspan='8')
+									td(colspan='3')
 										p MEDIO DE PAGO
 								tr#contenido
-									td(colspan='4')
-										.panel.body
-											strong 546789
-									td(colspan='8')
-										.panel.body
-											strong 98765
-								tr#contenido
-									td(colspan='12')
-										p RÉGIMEN FISCAL
-								tr#contenido
-									td(colspan='12')
+									td(colspan='6')
 										.panel.body
 											strong REGIMEN GENERAL DE LEY DE PERSONAS MORALES
+									td(colspan='3')
+										.panel.body
+											strong 546789		
+									td(colspan='3')
+										.panel.body
+											strong 98765
+								
 						td
 							table(width='100%', border='0', align='center')
 								tr#contenido
@@ -229,28 +247,10 @@ block nuevofooter
 									td
 									td
 									td
-								tr#contenido
-									td(colspan='12',align='right')
-										p VALOR DE FACTURA
+								
 								tr#contenido
 									td(colspan='4',align='right')
-										p prima neta
-									td
-										p $
-									td(colspan='7')
-										.panel.body
-											strong $1.02
-								tr#contenido
-									td(colspan='4',align='right')
-										p DERECHO
-									td
-										p $
-									td(colspan='7')
-										.panel.body
-											strong $0.00
-								tr#contenido
-									td(colspan='4',align='right')
-										p RECARGOS
+										p SUBTOTAL
 									td
 										p $
 									td(colspan='7')
@@ -269,7 +269,7 @@ block nuevofooter
 											strong $0.00
 								tr#contenido
 									td(colspan='4',align='right')
-										p IMPORTE TOTAL
+										p  	TOTAL
 									td
 										p $
 									td(colspan='7')
@@ -318,13 +318,13 @@ block nuevofooter
 							#footer
 								.container
 									.row.sellos
-										.col-md-12
+										.col-xs-12
 											p SELLO DIGITAL DEL CFDI:
 											p VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
-										.col-md-12
+										.col-xs-12
 											p SELLO DEL SAT:
 											p JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
-										.col-md-12
+										.col-xs-12
 											p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
 											p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
 
