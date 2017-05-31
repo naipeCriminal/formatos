@@ -79,25 +79,8 @@ block nuevoContent
 						td(colspan='12')
 							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
 					tr#contenido.wibe
-						td(colspan='12')
-							.col-md-4
-								label.azulrey PAGO EN UNA SOLA EXHIBICIÓN
-							.col-md-1
-								label.azulrey Anual
-							.col-md-1.ajustePanel.panel.body
-								strong X
-							.col-md-1
-								label.azulrey Semestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.azulrey Trimestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.azulrey Mensual
-							.col-md-1.ajustePanel.panel.body
-								strong 
+						td
+							label.azulrey PAGO EN 4 PARCIALIDADES
 					tr#contenido.wibe
 						td(colspan='3')
 							p Seguro de
@@ -111,7 +94,7 @@ block nuevoContent
 							p Inciso
 							.panel.body
 								strong 0
-						td(colspan='3')
+						td(colspan='3').completo
 							p Dias que Cubre
 							.panel.body
 								strong 31
@@ -124,34 +107,17 @@ block nuevoContent
 							p Moneda:
 							.panel.body
 								strong Pesos
-						td(colspan='4')
-							p Folio Fiscal Original:
-							.panel.body
-								strong XXX
-					tr#contenido.wibe
-						td(colspan='4')
-							p Serie Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p Fecha Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p  Monto Folio Fiscal Original:
-							.panel.body
-								strong $0.00
-					tr#contenido.wibe
-						td(colspan='8')
-							p Nombre del contratante
-							.panel.body
-								strong PUBLICO EN GENERAL
-						td(colspan='4')
+						td(colspan='4').completo
 							p R.F.C. del Contratante
 							.panel.body
 								strong XAXX010101000
 					tr#contenido.wibe
-						td(colspan='12')  
+						td(colspan='12').completo
+							p Nombre del contratante
+							.panel.body
+								strong PUBLICO EN GENERAL
+					tr#contenido.wibe
+						td(colspan='12').completo  
 							p Domicilio Fiscal
 							.panel.body
 								strong RET SAC XIB Num. MZ 6 Int 29, COL. SMZ 26, CANCÚN, QUINTANA ROO, MÉXICO, C.P. 77509
@@ -159,13 +125,13 @@ block nuevoContent
 								br
 block nuevofooter
 	table(width='100%', border='0', align='center')
-		tr#contenido.wibe
+		tr
 			td
 				table(width='95%', border='0', align='center')
-					tr#contenido
+					tr#contenido.wibe
 						td
 							table(width='100%', border='0', align='center')
-								tr#contenido
+								tr#contenido.wibe
 									td
 									td
 									td
@@ -178,45 +144,45 @@ block nuevofooter
 									td
 									td
 									td
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='5')
 										p UNIDAD DE MEDIDA
 									td(colspan='3')
 										p CANTIDAD
 									td(colspan='4')
-										p NO. CUENTA 
-								tr#contenido
+										p NO. CUENTA DE PAGO 
+								tr#contenido.wibe
 									td(colspan='5')
 										.panel.body 
 											strong NO APLICA
 									td(colspan='3')
 										.panel.body 
 											strong 1
-									td(colspan='4')
+									td(colspan='4').completo
 										.panel.body 
 											strong NO IDENTIFICADO
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4')
 										p TIPO DE CAMBIO
 									td(colspan='8')
 										p MEDIO DE PAGO
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4')
 										.panel.body
 											strong 546789
-									td(colspan='8')
+									td(colspan='8').completo
 										.panel.body
 											strong 98765
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='12')
 										p RÉGIMEN FISCAL
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='12')
 										.panel.body
 											strong REGIMEN GENERAL DE LEY DE PERSONAS MORALES
 						td
 							table(width='100%', border='0', align='center')
-								tr#contenido
+								tr#contenido.wibe
 									td
 									td
 									td
@@ -229,10 +195,10 @@ block nuevofooter
 									td
 									td
 									td
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='12',align='right')
 										p VALOR DE FACTURA
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4',align='right')
 										p prima neta
 									td
@@ -240,7 +206,7 @@ block nuevofooter
 									td(colspan='7')
 										.panel.body
 											strong $1.02
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4',align='right')
 										p DERECHO
 									td
@@ -248,7 +214,7 @@ block nuevofooter
 									td(colspan='7')
 										.panel.body
 											strong $0.00
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4',align='right')
 										p RECARGOS
 									td
@@ -256,7 +222,7 @@ block nuevofooter
 									td(colspan='7')
 										.panel.body
 											strong $0.00
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='3',align='right')
 										p I.V.A.
 									td(colspan='1',align='right')
@@ -267,25 +233,25 @@ block nuevofooter
 									td(colspan='7')
 										.panel.body
 											strong $0.00
-								tr#contenido
+								tr#contenido.wibe
 									td(colspan='4',align='right')
 										p IMPORTE TOTAL
 									td
 										p $
 									td(colspan='7')
 										.panel.body
-											strong $1.02
+											strong $3,485,474.52
 
 				table(width='95%', border='0', align='center')
-					tr#contenido
+					tr#contenido.wibe
 						td(width="20%")
 						td(width="80%")
-					tr#contenido
+					tr#contenido.wibe
 						td
 							img.img-responsive(src="../assets/img/qr_img.png")
 						td
 							table(width="100%")
-								tr#contenido
+								tr#contenido.wibe
 									td
 									td
 									td
@@ -295,22 +261,22 @@ block nuevofooter
 									td
 									td
 									td							
-								tr#contenido
-									td(colspan='9')
+								tr#contenido.wibe
+									td(colspan='9').completo
 										p IMPORTE CON LETRA
 										.panel.body
-											strong ***(OCHENTA Y TRES PESOS 89/100 M.N.)***
-								tr#contenido
+											strong ***(TRES MILLONES CUATROCIENTOS OCHENTA Y CINCO MIL CUATROCIENTOS SETENTA Y CUATRO PESOS 52/100 M.N.)***
+								tr#contenido.wibe
 									td(colspan='6')
 										p LUGAR, FECHA Y HORA DE EMISIÓN
 										.panel.body
 											strong 2016-10-2017T18:11:05
-									td(colspan='4')
+									td(colspan='4').completo
 										p FECHA DE GENERACIÓN
 										.panel.body
 											strong 1 DE AUGUST DE 2016
 				table(width='90%', border='0', align='center')
-					tr#contenido
+					tr#contenido.wibe
 						td(width="100%", align="center")
 							P.azulrey Este documento es una representación impresa de un CFDI
 					tr
@@ -318,13 +284,14 @@ block nuevofooter
 							#footer
 								.container
 									.row.sellos
-										.col-md-12
+										.col-xs-12
 											p SELLO DIGITAL DEL CFDI:
 											p VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
-										.col-md-12
+										.col-xs-12
 											p SELLO DEL SAT:
 											p JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
-										.col-md-12
+										.col-xs-12
 											p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
 											p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
+						
 

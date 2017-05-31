@@ -1,49 +1,5 @@
 extends formatos
 
-block content
-		#contenido
-			.container
-				.row
-					.col-md-4
-						p Seguro de
-						.panel.body 
-							strong Accidentes y Enfermedades
-					.col-md-2
-						p Póliza No.
-						.panel.body
-							strong G9C001H31K
-					.col-md-2
-						p Inciso
-						.panel.body
-							strong 1
-					.col-md-4
-						p Dias que Cubre
-						.panel.body
-							strong 242
-				.row
-					.col-md-4 
-						p Periodo del Recibo (Día/Mes/ Año)
-						.panel.body
-							strong 27/01/2013 al 26/09/2013
-					.col-md-4
-						p Moneda:
-						.panel.body
-							strong Pesos
-
-					.col-md-4
-						p R.F.C. del Contratante
-						.panel.body
-							strong PINK970719UHA
-				.row
-					.col-md-12
-						p Nombre del contratante
-						.panel.body
-							strong KAREN LIZETH PRIETO NIEVES
-				.row
-					.col-md-12
-						p Domicilio Fiscal
-						.panel.body
-							strong EMILIANO ZAPATA, COL. CORRAL NUEVO, ACAYUCAN, VERACRUZ, MÉXICO, C.P.96110
 block nuevoheader
 	table(width='100%', border='0', align='center')
 		tr
@@ -51,7 +7,7 @@ block nuevoheader
 				table(width='95%', border='0', align='center')
 					tr.head
 						td(colspan='2', rowspan='5')
-							img(src="../assets/img/bbva-salud.svg", alt="")
+							img(src="../assets/img/Logo_BBVA.png", alt="")
 						td(width='26%')
 							div(align='right')
 								.grupnls
@@ -97,8 +53,8 @@ block nuevoheader
 								.panel-body
 									strong 0
 					tr.head
-						td(width='23%')
-							P.azulrey BBVA BANCOMER SEGUROS SALUD S.A. DE C.V. GRUPO FINANCIERO BBVA BANCOMER.	
+						td(colspan='4')
+							P.azulrey BBVA Bancomer Seguros Salud S.A. de C.V., Grupo Financiero BBVA Bancomer.
 						td(colspan='3', rowspan='4')  
 					tr.head
 						td
@@ -123,22 +79,22 @@ block nuevoContent
 						td(colspan='12')
 							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
 					tr
-						td(colspan='12')
-								label.facturaParc PARCIALIDAD 1 DE 12 
+						td
+							label.facturaParc PARCIALIDAD 1 DE 12 
 					tr#contenido
 						td(colspan='3')
 							p Seguro de
 							.panel.body 
-								strong Accidentes y Enfermedades
+								strong VIDA
 						td(colspan='3')
 							p Póliza No.
 							.panel.body
-								strong Póliza No.  
+								strong 100741808  
 						td(colspan='3')
 							p Inciso
 							.panel.body
 								strong 0
-						td(colspan='3')
+						td(colspan='3').completo
 							p Dias que Cubre
 							.panel.body
 								strong 31
@@ -146,22 +102,22 @@ block nuevoContent
 						td(colspan='4')
 							p Periodo del Recibo (Día/Mes/ Año)
 							.panel.body
-								strong 27/01/2013 al 26/09/2013
+								strong 29/07/2016 al 29/08/2016 
 						td(colspan='4')
 							p Moneda:
 							.panel.body
 								strong Pesos
-						td(colspan='4')
-							p R.F.C. Contratante:
+						td(colspan='4').completo
+							p R.F.C. del Contratante
 							.panel.body
-								strong XXX
+								strong XAXX010101000
 					tr#contenido
-						td(colspan='12')
+						td(colspan='12').completo
 							p Nombre del contratante
 							.panel.body
 								strong PUBLICO EN GENERAL
 					tr#contenido
-						td(colspan='12')  
+						td(colspan='12').completo  
 							p Domicilio Fiscal
 							.panel.body
 								strong RET SAC XIB Num. MZ 6 Int 29, COL. SMZ 26, CANCÚN, QUINTANA ROO, MÉXICO, C.P. 77509
@@ -194,7 +150,7 @@ block nuevofooter
 									td(colspan='3')
 										p CANTIDAD
 									td(colspan='4')
-										p NO. CUENTA 
+										p NO. CUENTA DE PAGO 
 								tr#contenido
 									td(colspan='5')
 										.panel.body 
@@ -202,7 +158,7 @@ block nuevofooter
 									td(colspan='3')
 										.panel.body 
 											strong 1
-									td(colspan='4')
+									td(colspan='4').completo
 										.panel.body 
 											strong NO IDENTIFICADO
 								tr#contenido
@@ -214,7 +170,7 @@ block nuevofooter
 									td(colspan='4')
 										.panel.body
 											strong 546789
-									td(colspan='8')
+									td(colspan='8').completo
 										.panel.body
 											strong 98765
 								tr#contenido
@@ -271,7 +227,7 @@ block nuevofooter
 										p I.V.A.
 									td(colspan='1',align='right')
 										.panel.body
-											strong 15%
+											strong 0%
 									td
 										p $
 									td(colspan='7')
@@ -284,7 +240,7 @@ block nuevofooter
 										p $
 									td(colspan='7')
 										.panel.body
-											strong $1.02
+											strong $3,485,474.52
 
 				table(width='95%', border='0', align='center')
 					tr#contenido
@@ -306,16 +262,16 @@ block nuevofooter
 									td
 									td							
 								tr#contenido
-									td(colspan='9')
+									td(colspan='9').completo
 										p IMPORTE CON LETRA
 										.panel.body
-											strong ***(OCHENTA Y TRES PESOS 89/100 M.N.)***
+											strong ***(TRES MILLONES CUATROCIENTOS OCHENTA Y CINCO MIL CUATROCIENTOS SETENTA Y CUATRO PESOS 52/100 M.N.)***
 								tr#contenido
 									td(colspan='6')
 										p LUGAR, FECHA Y HORA DE EMISIÓN
 										.panel.body
 											strong 2016-10-2017T18:11:05
-									td(colspan='4')
+									td(colspan='4').completo
 										p FECHA DE GENERACIÓN
 										.panel.body
 											strong 1 DE AUGUST DE 2016
@@ -328,13 +284,13 @@ block nuevofooter
 							#footer
 								.container
 									.row.sellos
-										.col-md-12
+										.col-xs-12
 											p SELLO DIGITAL DEL CFDI:
 											p VLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZX H/WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5 GXSEJnDcOSTjwLtKQ==
-										.col-md-12
+										.col-xs-12
 											p SELLO DEL SAT:
 											p JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4Q8tBtk8y9HxFZRW9Kt9Wg pvubT2htAsutgB7PP6oxW JKDFdRdYAvHA+hCyzkLy5pjRFLhXxgxZdJ0xKN70eB2r7G68yiMyb/wrYR16jOzsgBh6ixp3pwjRM3uMb3rktyq3seohhIc1XJllBDpKhf5zcQ1QPunWm0Yay0Q/YaRgcZImHQ+kIyXIX4 Q8tBtk8y9HxFZRW9Kt9
-										.col-md-12
+										.col-xs-12
 											p CADENA ORIGINAL DEL COMPLEMENTO DE CERTIFICACIÓN DIGITAL DEL SAT:
 											p ||1.0|605CAD59-C767-4304-AF59-87A7F018953F|2017-01-27T11:22:05| lVLFu3HDW/iIZUlO/Ie+iieY7O k7b4cVxr7CYQDMR44gm75zePl8bW5wAV8b6ckaJMTwcr8SdebibN5I9DM3Ejo8IRutBlW/e7eTzwVm2bhh0tTz1H4d3HBhxsg5BvH31I7qzN+IAF0bZpV8ijvjWr0OYXR5tDO9ZXH /WLgsY/B/11l/pq6WnbxkwhT455tJhPC9VoT+mbB/rJ25AQnI53eLYYTJLnzy66JAlqiuvGHsBUwxotCVImd6iJ8MECGtIsCaN237dFhE8Uzj5gGhqPNxx5fxvMvVlaSzHjqGWOipKPUfXRgB1r0kpwBYHE/RnK5GXS EJnDcOSTjwLtKQ==|00001000000404490387||
-
+						
