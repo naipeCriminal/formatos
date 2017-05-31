@@ -7,7 +7,7 @@ block nuevoheader
 				table(width='95%', border='0', align='center')
 					tr.head
 						td(colspan='2', rowspan='5')
-							img(src="../assets/img/bbva-seguros.svg", alt="")
+							img(src="../assets/img/logo_preventis.jpg", alt="")
 						td(width='26%')
 							div(align='right')
 								.grupnls
@@ -53,8 +53,8 @@ block nuevoheader
 								.panel-body
 									strong 0
 					tr.head
-						td(width='23%')
-							P.azulrey Seguros BBVA Bancomer, S.A. de C.V., Grupo Financiero BBVA Bancomer.	
+						td(colspan='4')
+							P.azulrey BBVA Bancomer.	
 						td(colspan='3', rowspan='4')  
 					tr.head
 						td
@@ -80,24 +80,7 @@ block nuevoContent
 							P.azulrey RECIBO POR EL IMPORTE DE LA PRIMA DESCRITA, LA CUAL CUBRE LOS DIAS QUE SE INDICAN CONTADOS A PARTIR DE LA FECHA VENCIMIENTO.
 					tr
 						td(colspan='12')
-							.col-md-4
-								label.facturaParc PAGO EN UNA SOLA EXHIBICIÓN
-							.col-md-1
-								label.facturaParc Anual
-							.col-md-1.ajustePanel.panel.body
-								strong X
-							.col-md-1
-								label.facturaParc Semestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Trimestral
-							.col-md-1.ajustePanel.panel.body
-								strong
-							.col-md-1
-								label.facturaParc Mensual
-							.col-md-1.ajustePanel.panel.body
-								strong 
+							label.facturaParc PAGO EN 12 PARCIALIDADES
 					tr#contenido
 						td(colspan='3')
 							p Seguro de
@@ -111,8 +94,8 @@ block nuevoContent
 							p Inciso
 							.panel.body
 								strong 0
-						td(colspan='3')
-							p Dias que Cubre
+						td(colspan='3').completo
+							p Días que Cubre
 							.panel.body
 								strong 31
 					tr#contenido
@@ -124,34 +107,17 @@ block nuevoContent
 							p Moneda:
 							.panel.body
 								strong Pesos
-						td(colspan='4')
-							p Folio Fiscal Original:
+						td(colspan='4').completo
+							p R.F.C. Contratante
 							.panel.body
 								strong XXX
 					tr#contenido
-						td(colspan='4')
-							p Serie Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p Fecha Folio Fiscal Original
-							.panel.body
-								strong XXX
-						td(colspan='4')
-							p  Monto Folio Fiscal Original:
-							.panel.body
-								strong $0.00
-					tr#contenido
-						td(colspan='8')
+						td(colspan='12').completo
 							p Nombre del contratante
 							.panel.body
-								strong PUBLICO EN GENERAL
-						td(colspan='4')
-							p R.F.C. del Contratante
-							.panel.body
-								strong XAXX010101000
+								strong ERNESTINA PERÉZ PERALTA
 					tr#contenido
-						td(colspan='12')  
+						td(colspan='12').completo  
 							p Domicilio Fiscal
 							.panel.body
 								strong RET SAC XIB Num. MZ 6 Int 29, COL. SMZ 26, CANCÚN, QUINTANA ROO, MÉXICO, C.P. 77509
@@ -184,7 +150,7 @@ block nuevofooter
 									td(colspan='3')
 										p CANTIDAD
 									td(colspan='4')
-										p NO. CUENTA 
+										p NO. CUENTA DE PAGO 
 								tr#contenido
 									td(colspan='5')
 										.panel.body 
@@ -192,7 +158,7 @@ block nuevofooter
 									td(colspan='3')
 										.panel.body 
 											strong 1
-									td(colspan='4')
+									td(colspan='4').completo
 										.panel.body 
 											strong NO IDENTIFICADO
 								tr#contenido
@@ -204,7 +170,7 @@ block nuevofooter
 									td(colspan='4')
 										.panel.body
 											strong 546789
-									td(colspan='8')
+									td(colspan='8').completo
 										.panel.body
 											strong 98765
 								tr#contenido
@@ -296,7 +262,7 @@ block nuevofooter
 									td
 									td							
 								tr#contenido
-									td(colspan='9')
+									td(colspan='9').completo
 										p IMPORTE CON LETRA
 										.panel.body
 											strong ***(OCHENTA Y TRES PESOS 89/100 M.N.)***
@@ -305,7 +271,7 @@ block nuevofooter
 										p LUGAR, FECHA Y HORA DE EMISIÓN
 										.panel.body
 											strong 2016-10-2017T18:11:05
-									td(colspan='4')
+									td(colspan='4').completo
 										p FECHA DE GENERACIÓN
 										.panel.body
 											strong 1 DE AUGUST DE 2016
